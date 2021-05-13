@@ -1,0 +1,13 @@
+.panel {
+  @apply bg-white rounded-lg border-0 shadow;
+
+  .panel-body {
+    @apply px-10 py-8;
+  }
+}
+
+.panel-sm {
+  .panel-body {
+    @apply px-8;
+  }
+}

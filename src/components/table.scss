@@ -1,0 +1,21 @@
+table.table {
+  @apply w-full border-collapse;
+  td, th {
+    @apply font-normal py-4 px-8;
+  }
+  th {
+    @apply text-left;
+  }
+}
+
+table.table-lg {
+  @apply text-lg;
+}
+
+table.table-border {
+  tbody {
+    tr {
+      @apply border-b border-dashed border-grey-light;
+    }
+  }
+}

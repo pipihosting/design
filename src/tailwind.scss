@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "./components/panel.scss";
+@import "./components/form.scss";
+@import "./components/buttons.scss";
+@import "./components/navbar.scss";
+@import "./components/table.scss";
+@import "./components/alert.scss";
+@import "./components/list.scss";
+@import "./components/dropdown.scss";
+@import "./components/avatar.scss";
+@import "./components/pagination.scss";
+
+@import "tailwindcss/utilities";

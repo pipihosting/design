@@ -1,0 +1,46 @@
+.simple_form {
+  .form-group-invalid {
+    label {
+      @apply text-red;
+    }
+    .form-control {
+      @apply border-red-light focus:border-red;
+    }
+    .invalid-feedback {
+      @apply text-sm text-red;
+    }
+  }
+}
+.form-control {
+  @apply w-full p-sm border-grey-light rounded focus:border-primary text-base;
+
+  &[disabled] {
+    @apply bg-grey-light cursor-not-allowed;
+  }
+}
+
+.input-group, .form-group {
+  @apply mb-sm;
+}
+
+.date-select {
+  @apply flex gap-2;
+  .form-control {
+    @apply inline-block;
+    width: auto;
+    flex: 1;
+  }
+}
+
+.input-icon {
+  @apply relative;
+  svg {
+    @apply absolute m-sm;
+    width: 1.4rem;
+    height: 1.4rem;
+    top: 1px;
+  }
+  .form-control {
+    padding-left: 2rem;
+  }
+}

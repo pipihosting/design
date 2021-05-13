@@ -1,0 +1,35 @@
+.btn {
+  @apply px-lg py-sm rounded font-medium cursor-pointer text-white bg-grey hover:bg-grey-dark inline-block text-base border border-grey hover:border-grey-dark;
+}
+
+.btn[disabled], .btn[disabled]:hover {
+  @apply bg-opacity-50 cursor-not-allowed;
+}
+
+.btn-block {
+  @apply w-full;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary-dark border border-primary hover:border-primary-dark;
+}
+
+.btn-blue {
+  @apply bg-blue hover:bg-blue-dark border border-blue hover:border-blue-dark;
+}
+
+.btn-yellow {
+  @apply bg-yellow hover:bg-yellow-dark border border-yellow hover:border-yellow-dark;
+}
+
+.btn-green {
+  @apply bg-green hover:bg-green-dark border border-green hover:border-green-dark;
+}
+
+.btn-white {
+  @apply bg-white border border-grey-light text-black hover:bg-black hover:text-white;
+}
+
+.btn-black {
+  @apply bg-black border border-grey-light text-white hover:bg-white hover:text-black;
+}

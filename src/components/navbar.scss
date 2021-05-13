@@ -1,0 +1,12 @@
+.navbar {
+  .nav-link {
+    @apply inline-block text-black mr-16 leading-8;
+    &.active {
+      @apply border-b-2 border-primary-light text-primary-light;
+    }
+
+    svg {
+      @apply mr-sm;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.alert {
+  @apply text-white py-md w-full;
+
+  .container {
+    @apply lg:max-w-screen-md 2xl:max-w-screen-lg mx-auto px-md;
+  }
+
+  .close {
+    @apply float-right cursor-pointer;
+  }
+}
+
+.alert-danger {
+  @apply bg-red-light;
+}
+
+.alert-info {
+  @apply bg-green-light;
+}

@@ -1,0 +1,10 @@
+.list {
+  @apply py-sm divide-solid divide-y divide-grey-lightest;
+  .list-item {
+    @apply text-left block px-md py-sm text-sm hover:bg-primary hover:text-white;
+
+    &.danger {
+      @apply text-red hover:bg-red hover:text-white;
+    }
+  }
+}
