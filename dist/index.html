@@ -68,7 +68,6 @@
         <div class="border-4 border-dashed border-yellow p-lg">
           <button class="btn btn-primary btn-block">.btn.btn-primary.btn-block</button>
         </div>
-
       </div>
 
       <div id="alert" class="mt-lg">
@@ -80,6 +79,61 @@
               Hello
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-4 gap-4 my-lg">
+        <div></div>
+        <div class="text-lg">CheckBox</div>
+        <div class="text-lg">RadioButton</div>
+        <div class="text-lg">ToggleButton</div>
+        <div class="text-sm">Default</div>
+        <div>
+          <input type="checkbox" id="checkbox1"/>
+          <label for="checkbox1">Default</label>
+        </div>
+        <div>
+          <input type="radio" id="radio1" name="radio-btn"/>
+          <label for="radio1">Default</label>
+        </div>
+        <div>
+          <input type="checkbox" id="toggle-btn1" class='toggle-btn-checkbox'/>
+          <label for="toggle-btn1" class="toggle-btn">
+            <div class='open-hint'>On</div>
+            <div class='close-hint'>Off</div>
+          </label>
+        </div>
+        <div class="text-sm">Selected</div>
+        <div>
+          <input type="checkbox" id="checkbox2" checked/>
+          <label for="checkbox2">Checked</label>
+        </div>
+        <div>
+          <input type="radio" id="radio2" name="radio-btn" checked/>
+          <label for="radio2">Checked</label>
+        </div>
+        <div>
+          <input type="checkbox" id="toggle-btn2" checked class='toggle-btn-checkbox'/>
+          <label for="toggle-btn2" class="toggle-btn">
+            <div class='open-hint'>On</div>
+            <div class='close-hint'>Off</div>
+          </label>
+        </div>
+        <div class="text-sm">Disabled</div>
+        <div>
+          <input type="checkbox" id="checkbox3" disabled/>
+          <label for="checkbox3">Disabled</label>
+        </div>
+        <div>
+          <input type="radio" id="radio3" name="radio-btn" disabled/>
+          <label for="radio3">Disabled</label>
+        </div>
+        <div>
+          <input type="checkbox" id="toggle-btn3" disabled class='toggle-btn-checkbox'/>
+          <label for="toggle-btn3" class="toggle-btn">
+            <div class='open-hint'>Disabled</div>
+            <div class='close-hint'>Disabled</div>
+          </label>
         </div>
       </div>
     </div>

@@ -14,6 +14,11 @@ module.exports = {
       light: '#DFDFDF',
       lightest: '#F6F6F6',
     },
+    checkbox: {
+      DEFAULT: "#D8DDE0",
+      active: "#4263EB",
+      disabled: "#E8E8E8",
+    },
     white: {
       DEFAULT: 'white',
     },
