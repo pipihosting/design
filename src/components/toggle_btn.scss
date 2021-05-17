@@ -2,13 +2,10 @@
   display: none;
   height: 28px;
   + .toggle-btn {
-    @apply bg-white rounded-2xl border-checkbox border;
+    @apply bg-white rounded-2xl border-checkbox relative border inline-block align-text-bottom;
     outline: 0;
-    display: inline-block;
-    vertical-align: text-bottom;
     width: 52px;
     height: 28px;
-    position: relative;
     cursor: pointer;
     user-select: none;
 		padding: 2px;
@@ -16,8 +13,7 @@
     margin-bottom: 0;
     &:after,
     &:before {
-      position: relative;
-      display: block;
+      @apply block relative;
       content: "";
       width: 22px;
       height: 22px;
@@ -32,27 +28,22 @@
     }
 
     &:before {
-      display: none;
+      @apply hidden;
     }
 
     .open-hint{
-      display: none;
-      position: absolute;
+      @apply hidden absolute font-normal;
       top: 0px;
       left: 66px;
       width: auto;
-      color: #7D8596;
       font-size: 12px;
-      font-weight: normal;
       line-height: 26px;
     }
     .close-hint{
-      position: absolute;
-      color: #7D8596;
+      @apply absolute font-normal;
       left: 66px;
       top: 0px;
       font-size: 12px;
-      font-weight: normal;
       line-height: 26px;
     }
   }
@@ -60,13 +51,13 @@
 	&:checked + .toggle-btn {
     @apply bg-checkbox-active;
     &:after{
-      background: #fff;
+      @apply bg-white;
     }
     .open-hint{
-      display: block;
+      @apply block;
     }
     .close-hint{
-      display: none;
+      @apply hidden;
     }
 	}
 

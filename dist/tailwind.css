@@ -1522,12 +1522,12 @@ input[type="radio"]:disabled {
     border-color: rgba(216, 221, 224, var(--tw-border-opacity));
     border-radius: 1rem;
     border-width: 1px;
-    outline: 0;
     display: inline-block;
+    position: relative;
     vertical-align: text-bottom;
+    outline: 0;
     width: 52px;
     height: 28px;
-    position: relative;
     cursor: pointer;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -1538,10 +1538,13 @@ input[type="radio"]:disabled {
     margin-bottom: 0;
   }
 
+.toggle-btn-checkbox + .toggle-btn:after, .toggle-btn-checkbox + .toggle-btn:before {
+      display: block;
+      position: relative;
+    }
+
 .toggle-btn-checkbox + .toggle-btn:after,
     .toggle-btn-checkbox + .toggle-btn:before {
-      position: relative;
-      display: block;
       content: "";
       width: 22px;
       height: 22px;
@@ -1562,23 +1565,21 @@ input[type="radio"]:disabled {
 
 .toggle-btn-checkbox + .toggle-btn .open-hint{
       display: none;
+      font-weight: 400;
       position: absolute;
       top: 0px;
       left: 66px;
       width: auto;
-      color: #7D8596;
       font-size: 12px;
-      font-weight: normal;
       line-height: 26px;
     }
 
 .toggle-btn-checkbox + .toggle-btn .close-hint{
+      font-weight: 400;
       position: absolute;
-      color: #7D8596;
       left: 66px;
       top: 0px;
       font-size: 12px;
-      font-weight: normal;
       line-height: 26px;
     }
 
@@ -1588,7 +1589,8 @@ input[type="radio"]:disabled {
   }
 
 .toggle-btn-checkbox:checked + .toggle-btn:after{
-      background: #fff;
+      --tw-bg-opacity: 1;
+      background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
     }
 
 .toggle-btn-checkbox:checked + .toggle-btn .open-hint{
