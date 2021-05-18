@@ -68,7 +68,12 @@ module.exports = {
   },
   extend: {
     gridTemplateColumns: {
-      'layout': '220px minmax(0, 1fr)',
+      'layout': '220px 1fr',
+    },
+    gridTemplateRows: {
+      'sidebar': '120px 1fr 95px',
+      'main-content': '40px 1fr',
+
     },
     spacing: {
       sm: '0.5rem',
