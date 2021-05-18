@@ -1444,7 +1444,7 @@ table.table-border tbody tr {
 
 input[type="checkbox"] {
   --tw-border-opacity: 1;
-  border-color: rgba(216, 221, 224, var(--tw-border-opacity));
+  border-color: rgba(223, 223, 223, var(--tw-border-opacity));
   border-radius: 0.25rem;
 }
 
@@ -1466,19 +1466,19 @@ input[type="checkbox"] {
 
 input[type="checkbox"] {
   --tw-text-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-text-opacity));
+  color: rgba(34, 48, 94, var(--tw-text-opacity));
 }
 
 input[type="checkbox"]:disabled {
   --tw-bg-opacity: 1;
-  background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
+  background-color: rgba(223, 223, 223, var(--tw-bg-opacity));
   --tw-border-opacity: 1;
-  border-color: rgba(232, 232, 232, var(--tw-border-opacity));
+  border-color: rgba(223, 223, 223, var(--tw-border-opacity));
 }
 
 input[type="radio"] {
   --tw-border-opacity: 1;
-  border-color: rgba(216, 221, 224, var(--tw-border-opacity));
+  border-color: rgba(223, 223, 223, var(--tw-border-opacity));
 }
 
 input[type="radio"]:focus {
@@ -1499,15 +1499,15 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
   --tw-text-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-text-opacity));
+  color: rgba(34, 48, 94, var(--tw-text-opacity));
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke-width='10' fill='none' stroke='white' d='M 15 50 A 35 35, 0, 0, 1, 85 50 A 35 35, 0, 0, 1, 15 50' /%3e%3c/svg%3e");
 }
 
 input[type="radio"]:disabled {
   --tw-bg-opacity: 1;
-  background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
+  background-color: rgba(223, 223, 223, var(--tw-bg-opacity));
   --tw-border-opacity: 1;
-  border-color: rgba(232, 232, 232, var(--tw-border-opacity));
+  border-color: rgba(223, 223, 223, var(--tw-border-opacity));
 }
 
 .toggle-btn-checkbox {
@@ -1519,7 +1519,7 @@ input[type="radio"]:disabled {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
     --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
+    border-color: rgba(223, 223, 223, var(--tw-border-opacity));
     border-radius: 1rem;
     border-width: 1px;
     display: inline-block;
@@ -1552,7 +1552,7 @@ input[type="radio"]:disabled {
 
 .toggle-btn-checkbox + .toggle-btn:after {
       --tw-bg-opacity: 1;
-      background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
+      background-color: rgba(223, 223, 223, var(--tw-bg-opacity));
       left: 0px;
       top: 0px;
       border-radius: 50%;
@@ -1585,7 +1585,7 @@ input[type="radio"]:disabled {
 
 .toggle-btn-checkbox:checked + .toggle-btn {
     --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
+    background-color: rgba(34, 48, 94, var(--tw-bg-opacity));
   }
 
 .toggle-btn-checkbox:checked + .toggle-btn:after{
@@ -1607,18 +1607,58 @@ input[type="radio"]:disabled {
 
 .toggle-btn-checkbox:disabled + .toggle-btn{
     --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
+    background-color: rgba(223, 223, 223, var(--tw-bg-opacity));
   }
 
 .toggle-btn-checkbox:disabled + .toggle-btn .tips-content-right, .toggle-btn-checkbox:disabled + .toggle-btn .tips-content-left{
       --tw-text-opacity: 1;
-      color: rgba(232, 232, 232, var(--tw-text-opacity));
+      color: rgba(223, 223, 223, var(--tw-text-opacity));
     }
 
 .toggle-btn-checkbox:disabled + .toggle-btn:after{
       --tw-bg-opacity: 1;
-      background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
+      background-color: rgba(145, 145, 145, var(--tw-bg-opacity));
     }
+
+.admin-layout {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 220px minmax(0, 1fr);
+}
+
+.admin-layout .main-content {
+    padding: 1.5rem;
+  }
+
+.list-group .list-group-item {
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5;
+    line-height: 2.25rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    --tw-text-opacity: 1;
+    color: rgba(204, 204, 204, var(--tw-text-opacity));
+  }
+
+.list-group .list-group-item.active, .list-group .list-group-item:hover {
+      position: relative;
+      --tw-text-opacity: 1;
+      color: rgba(34, 48, 94, var(--tw-text-opacity));
+    }
+
+.list-group .list-group-item.active:before, .list-group .list-group-item:hover:before {
+        height: 100%;
+        position: absolute;
+        width: 3rem;
+        top: 0;
+        left: 0;
+        content: "";
+        background: linear-gradient(90deg, #ACA9FF 0%, rgba(172, 169, 255, 0) 91.25%);
+        opacity: 0.2;
+      }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -2672,21 +2712,6 @@ input[type="radio"]:disabled {
   border-color: rgba(246, 246, 246, var(--tw-divide-opacity));
 }
 
-.divide-checkbox > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgba(216, 221, 224, var(--tw-divide-opacity));
-}
-
-.divide-checkbox-active > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgba(66, 99, 235, var(--tw-divide-opacity));
-}
-
-.divide-checkbox-disabled > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgba(232, 232, 232, var(--tw-divide-opacity));
-}
-
 .divide-white > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
@@ -2991,21 +3016,6 @@ input[type="radio"]:disabled {
   background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
 }
 
-.bg-checkbox {
-  --tw-bg-opacity: 1;
-  background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-}
-
-.bg-checkbox-active {
-  --tw-bg-opacity: 1;
-  background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-}
-
-.bg-checkbox-disabled {
-  --tw-bg-opacity: 1;
-  background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -3124,21 +3134,6 @@ input[type="radio"]:disabled {
 .group:hover .group-hover\:bg-grey-lightest {
   --tw-bg-opacity: 1;
   background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:bg-checkbox {
-  --tw-bg-opacity: 1;
-  background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:bg-checkbox-active {
-  --tw-bg-opacity: 1;
-  background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:bg-checkbox-disabled {
-  --tw-bg-opacity: 1;
-  background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-white {
@@ -3261,21 +3256,6 @@ input[type="radio"]:disabled {
   background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
 }
 
-.focus-within\:bg-checkbox:focus-within {
-  --tw-bg-opacity: 1;
-  background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-}
-
-.focus-within\:bg-checkbox-active:focus-within {
-  --tw-bg-opacity: 1;
-  background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-}
-
-.focus-within\:bg-checkbox-disabled:focus-within {
-  --tw-bg-opacity: 1;
-  background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-}
-
 .focus-within\:bg-white:focus-within {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -3394,21 +3374,6 @@ input[type="radio"]:disabled {
 .hover\:bg-grey-lightest:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-}
-
-.hover\:bg-checkbox:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-}
-
-.hover\:bg-checkbox-active:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-}
-
-.hover\:bg-checkbox-disabled:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {
@@ -3531,21 +3496,6 @@ input[type="radio"]:disabled {
   background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
 }
 
-.focus\:bg-checkbox:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-}
-
-.focus\:bg-checkbox-active:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-}
-
-.focus\:bg-checkbox-disabled:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-}
-
 .focus\:bg-white:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -3664,21 +3614,6 @@ input[type="radio"]:disabled {
 .disabled\:bg-grey-lightest:disabled {
   --tw-bg-opacity: 1;
   background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-}
-
-.disabled\:bg-checkbox:disabled {
-  --tw-bg-opacity: 1;
-  background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-}
-
-.disabled\:bg-checkbox-active:disabled {
-  --tw-bg-opacity: 1;
-  background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-}
-
-.disabled\:bg-checkbox-disabled:disabled {
-  --tw-bg-opacity: 1;
-  background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
 }
 
 .disabled\:bg-white:disabled {
@@ -3837,21 +3772,6 @@ input[type="radio"]:disabled {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
 }
 
-.from-checkbox {
-  --tw-gradient-from: #D8DDE0;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-}
-
-.from-checkbox-active {
-  --tw-gradient-from: #4263EB;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-}
-
-.from-checkbox-disabled {
-  --tw-gradient-from: #E8E8E8;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
-}
-
 .from-white {
   --tw-gradient-from: white;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
@@ -3964,18 +3884,6 @@ input[type="radio"]:disabled {
   --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
 }
 
-.via-checkbox {
-  --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-}
-
-.via-checkbox-active {
-  --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-}
-
-.via-checkbox-disabled {
-  --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-}
-
 .via-white {
   --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
@@ -4070,18 +3978,6 @@ input[type="radio"]:disabled {
 
 .to-grey-lightest {
   --tw-gradient-to: #F6F6F6;
-}
-
-.to-checkbox {
-  --tw-gradient-to: #D8DDE0;
-}
-
-.to-checkbox-active {
-  --tw-gradient-to: #4263EB;
-}
-
-.to-checkbox-disabled {
-  --tw-gradient-to: #E8E8E8;
 }
 
 .to-white {
@@ -4186,21 +4082,6 @@ input[type="radio"]:disabled {
 .hover\:from-grey-lightest:hover {
   --tw-gradient-from: #F6F6F6;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-}
-
-.hover\:from-checkbox:hover {
-  --tw-gradient-from: #D8DDE0;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-}
-
-.hover\:from-checkbox-active:hover {
-  --tw-gradient-from: #4263EB;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-}
-
-.hover\:from-checkbox-disabled:hover {
-  --tw-gradient-from: #E8E8E8;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
 }
 
 .hover\:from-white:hover {
@@ -4315,18 +4196,6 @@ input[type="radio"]:disabled {
   --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
 }
 
-.hover\:via-checkbox:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-}
-
-.hover\:via-checkbox-active:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-}
-
-.hover\:via-checkbox-disabled:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-}
-
 .hover\:via-white:hover {
   --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
@@ -4421,18 +4290,6 @@ input[type="radio"]:disabled {
 
 .hover\:to-grey-lightest:hover {
   --tw-gradient-to: #F6F6F6;
-}
-
-.hover\:to-checkbox:hover {
-  --tw-gradient-to: #D8DDE0;
-}
-
-.hover\:to-checkbox-active:hover {
-  --tw-gradient-to: #4263EB;
-}
-
-.hover\:to-checkbox-disabled:hover {
-  --tw-gradient-to: #E8E8E8;
 }
 
 .hover\:to-white:hover {
@@ -4537,21 +4394,6 @@ input[type="radio"]:disabled {
 .focus\:from-grey-lightest:focus {
   --tw-gradient-from: #F6F6F6;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-}
-
-.focus\:from-checkbox:focus {
-  --tw-gradient-from: #D8DDE0;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-}
-
-.focus\:from-checkbox-active:focus {
-  --tw-gradient-from: #4263EB;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-}
-
-.focus\:from-checkbox-disabled:focus {
-  --tw-gradient-from: #E8E8E8;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
 }
 
 .focus\:from-white:focus {
@@ -4666,18 +4508,6 @@ input[type="radio"]:disabled {
   --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
 }
 
-.focus\:via-checkbox:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-}
-
-.focus\:via-checkbox-active:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-}
-
-.focus\:via-checkbox-disabled:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-}
-
 .focus\:via-white:focus {
   --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
@@ -4772,18 +4602,6 @@ input[type="radio"]:disabled {
 
 .focus\:to-grey-lightest:focus {
   --tw-gradient-to: #F6F6F6;
-}
-
-.focus\:to-checkbox:focus {
-  --tw-gradient-to: #D8DDE0;
-}
-
-.focus\:to-checkbox-active:focus {
-  --tw-gradient-to: #4263EB;
-}
-
-.focus\:to-checkbox-disabled:focus {
-  --tw-gradient-to: #E8E8E8;
 }
 
 .focus\:to-white:focus {
@@ -5270,21 +5088,6 @@ input[type="radio"]:disabled {
   border-color: rgba(246, 246, 246, var(--tw-border-opacity));
 }
 
-.border-checkbox {
-  --tw-border-opacity: 1;
-  border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-}
-
-.border-checkbox-active {
-  --tw-border-opacity: 1;
-  border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-}
-
-.border-checkbox-disabled {
-  --tw-border-opacity: 1;
-  border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-}
-
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -5403,21 +5206,6 @@ input[type="radio"]:disabled {
 .group:hover .group-hover\:border-grey-lightest {
   --tw-border-opacity: 1;
   border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-}
-
-.group:hover .group-hover\:border-checkbox {
-  --tw-border-opacity: 1;
-  border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-}
-
-.group:hover .group-hover\:border-checkbox-active {
-  --tw-border-opacity: 1;
-  border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-}
-
-.group:hover .group-hover\:border-checkbox-disabled {
-  --tw-border-opacity: 1;
-  border-color: rgba(232, 232, 232, var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:border-white {
@@ -5540,21 +5328,6 @@ input[type="radio"]:disabled {
   border-color: rgba(246, 246, 246, var(--tw-border-opacity));
 }
 
-.focus-within\:border-checkbox:focus-within {
-  --tw-border-opacity: 1;
-  border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-}
-
-.focus-within\:border-checkbox-active:focus-within {
-  --tw-border-opacity: 1;
-  border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-}
-
-.focus-within\:border-checkbox-disabled:focus-within {
-  --tw-border-opacity: 1;
-  border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-}
-
 .focus-within\:border-white:focus-within {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -5675,21 +5448,6 @@ input[type="radio"]:disabled {
   border-color: rgba(246, 246, 246, var(--tw-border-opacity));
 }
 
-.hover\:border-checkbox:hover {
-  --tw-border-opacity: 1;
-  border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-}
-
-.hover\:border-checkbox-active:hover {
-  --tw-border-opacity: 1;
-  border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-}
-
-.hover\:border-checkbox-disabled:hover {
-  --tw-border-opacity: 1;
-  border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-}
-
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -5808,21 +5566,6 @@ input[type="radio"]:disabled {
 .focus\:border-grey-lightest:focus {
   --tw-border-opacity: 1;
   border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-}
-
-.focus\:border-checkbox:focus {
-  --tw-border-opacity: 1;
-  border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-}
-
-.focus\:border-checkbox-active:focus {
-  --tw-border-opacity: 1;
-  border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-}
-
-.focus\:border-checkbox-disabled:focus {
-  --tw-border-opacity: 1;
-  border-color: rgba(232, 232, 232, var(--tw-border-opacity));
 }
 
 .focus\:border-white:focus {
@@ -12170,51 +11913,6 @@ input[type="radio"]:disabled {
   color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
 }
 
-.placeholder-checkbox::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-}
-
-.placeholder-checkbox:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-}
-
-.placeholder-checkbox::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-}
-
-.placeholder-checkbox-active::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-}
-
-.placeholder-checkbox-active:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-}
-
-.placeholder-checkbox-active::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-}
-
-.placeholder-checkbox-disabled::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-}
-
-.placeholder-checkbox-disabled:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-}
-
-.placeholder-checkbox-disabled::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-}
-
 .placeholder-white::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
@@ -12573,51 +12271,6 @@ input[type="radio"]:disabled {
 .focus\:placeholder-grey-lightest:focus::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-checkbox:focus::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-checkbox:focus:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-checkbox:focus::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-checkbox-active:focus::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-checkbox-active:focus:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-checkbox-active:focus::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-checkbox-disabled:focus::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-checkbox-disabled:focus:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-checkbox-disabled:focus::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-white:focus::-moz-placeholder {
@@ -16698,18 +16351,6 @@ input[type="radio"]:disabled {
   --tw-ring-offset-color: #F6F6F6;
 }
 
-.ring-offset-checkbox {
-  --tw-ring-offset-color: #D8DDE0;
-}
-
-.ring-offset-checkbox-active {
-  --tw-ring-offset-color: #4263EB;
-}
-
-.ring-offset-checkbox-disabled {
-  --tw-ring-offset-color: #E8E8E8;
-}
-
 .ring-offset-white {
   --tw-ring-offset-color: white;
 }
@@ -16806,18 +16447,6 @@ input[type="radio"]:disabled {
   --tw-ring-offset-color: #F6F6F6;
 }
 
-.focus-within\:ring-offset-checkbox:focus-within {
-  --tw-ring-offset-color: #D8DDE0;
-}
-
-.focus-within\:ring-offset-checkbox-active:focus-within {
-  --tw-ring-offset-color: #4263EB;
-}
-
-.focus-within\:ring-offset-checkbox-disabled:focus-within {
-  --tw-ring-offset-color: #E8E8E8;
-}
-
 .focus-within\:ring-offset-white:focus-within {
   --tw-ring-offset-color: white;
 }
@@ -16912,18 +16541,6 @@ input[type="radio"]:disabled {
 
 .focus\:ring-offset-grey-lightest:focus {
   --tw-ring-offset-color: #F6F6F6;
-}
-
-.focus\:ring-offset-checkbox:focus {
-  --tw-ring-offset-color: #D8DDE0;
-}
-
-.focus\:ring-offset-checkbox-active:focus {
-  --tw-ring-offset-color: #4263EB;
-}
-
-.focus\:ring-offset-checkbox-disabled:focus {
-  --tw-ring-offset-color: #E8E8E8;
 }
 
 .focus\:ring-offset-white:focus {
@@ -17090,21 +16707,6 @@ input[type="radio"]:disabled {
   --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
 }
 
-.ring-checkbox {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-}
-
-.ring-checkbox-active {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-}
-
-.ring-checkbox-disabled {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-}
-
 .ring-white {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -17225,21 +16827,6 @@ input[type="radio"]:disabled {
   --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
 }
 
-.focus-within\:ring-checkbox:focus-within {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-}
-
-.focus-within\:ring-checkbox-active:focus-within {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-}
-
-.focus-within\:ring-checkbox-disabled:focus-within {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-}
-
 .focus-within\:ring-white:focus-within {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -17358,21 +16945,6 @@ input[type="radio"]:disabled {
 .focus\:ring-grey-lightest:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
-}
-
-.focus\:ring-checkbox:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-}
-
-.focus\:ring-checkbox-active:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-}
-
-.focus\:ring-checkbox-disabled:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
 }
 
 .focus\:ring-white:focus {
@@ -17719,21 +17291,6 @@ input[type="radio"]:disabled {
   color: rgba(246, 246, 246, var(--tw-text-opacity));
 }
 
-.text-checkbox {
-  --tw-text-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-text-opacity));
-}
-
-.text-checkbox-active {
-  --tw-text-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-text-opacity));
-}
-
-.text-checkbox-disabled {
-  --tw-text-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -17852,21 +17409,6 @@ input[type="radio"]:disabled {
 .group:hover .group-hover\:text-grey-lightest {
   --tw-text-opacity: 1;
   color: rgba(246, 246, 246, var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-checkbox {
-  --tw-text-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-checkbox-active {
-  --tw-text-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-checkbox-disabled {
-  --tw-text-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-white {
@@ -17989,21 +17531,6 @@ input[type="radio"]:disabled {
   color: rgba(246, 246, 246, var(--tw-text-opacity));
 }
 
-.focus-within\:text-checkbox:focus-within {
-  --tw-text-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-text-opacity));
-}
-
-.focus-within\:text-checkbox-active:focus-within {
-  --tw-text-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-text-opacity));
-}
-
-.focus-within\:text-checkbox-disabled:focus-within {
-  --tw-text-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-text-opacity));
-}
-
 .focus-within\:text-white:focus-within {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -18124,21 +17651,6 @@ input[type="radio"]:disabled {
   color: rgba(246, 246, 246, var(--tw-text-opacity));
 }
 
-.hover\:text-checkbox:hover {
-  --tw-text-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-text-opacity));
-}
-
-.hover\:text-checkbox-active:hover {
-  --tw-text-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-text-opacity));
-}
-
-.hover\:text-checkbox-disabled:hover {
-  --tw-text-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-text-opacity));
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -18257,21 +17769,6 @@ input[type="radio"]:disabled {
 .focus\:text-grey-lightest:focus {
   --tw-text-opacity: 1;
   color: rgba(246, 246, 246, var(--tw-text-opacity));
-}
-
-.focus\:text-checkbox:focus {
-  --tw-text-opacity: 1;
-  color: rgba(216, 221, 224, var(--tw-text-opacity));
-}
-
-.focus\:text-checkbox-active:focus {
-  --tw-text-opacity: 1;
-  color: rgba(66, 99, 235, var(--tw-text-opacity));
-}
-
-.focus\:text-checkbox-disabled:focus {
-  --tw-text-opacity: 1;
-  color: rgba(232, 232, 232, var(--tw-text-opacity));
 }
 
 .focus\:text-white:focus {
@@ -19876,6 +19373,10 @@ input[type="radio"]:disabled {
 
 .grid-cols-none {
   grid-template-columns: none;
+}
+
+.grid-cols-layout {
+  grid-template-columns: 220px minmax(0, 1fr);
 }
 
 .auto-cols-auto {
@@ -25458,21 +24959,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-divide-opacity));
   }
 
-  .sm\:divide-checkbox > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-divide-opacity));
-  }
-
-  .sm\:divide-checkbox-active > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-divide-opacity));
-  }
-
-  .sm\:divide-checkbox-disabled > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-divide-opacity));
-  }
-
   .sm\:divide-white > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
@@ -25777,21 +25263,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .sm\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .sm\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .sm\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .sm\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -25910,21 +25381,6 @@ input[type="radio"]:disabled {
   .group:hover .sm\:group-hover\:bg-grey-lightest {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-white {
@@ -26047,21 +25503,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .sm\:focus-within\:bg-checkbox:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .sm\:focus-within\:bg-checkbox-active:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .sm\:focus-within\:bg-checkbox-disabled:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .sm\:focus-within\:bg-white:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -26180,21 +25621,6 @@ input[type="radio"]:disabled {
   .sm\:hover\:bg-grey-lightest:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .sm\:hover\:bg-checkbox:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .sm\:hover\:bg-checkbox-active:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .sm\:hover\:bg-checkbox-disabled:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-white:hover {
@@ -26317,21 +25743,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .sm\:focus\:bg-checkbox:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .sm\:focus\:bg-checkbox-active:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .sm\:focus\:bg-checkbox-disabled:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .sm\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -26450,21 +25861,6 @@ input[type="radio"]:disabled {
   .sm\:disabled\:bg-grey-lightest:disabled {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .sm\:disabled\:bg-checkbox:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .sm\:disabled\:bg-checkbox-active:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .sm\:disabled\:bg-checkbox-disabled:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .sm\:disabled\:bg-white:disabled {
@@ -26623,21 +26019,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .sm\:from-checkbox {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .sm\:from-checkbox-active {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .sm\:from-checkbox-disabled {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .sm\:from-white {
     --tw-gradient-from: white;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
@@ -26750,18 +26131,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .sm\:via-checkbox {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .sm\:via-checkbox-active {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .sm\:via-checkbox-disabled {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .sm\:via-white {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -26856,18 +26225,6 @@ input[type="radio"]:disabled {
 
   .sm\:to-grey-lightest {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .sm\:to-checkbox {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .sm\:to-checkbox-active {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .sm\:to-checkbox-disabled {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .sm\:to-white {
@@ -26972,21 +26329,6 @@ input[type="radio"]:disabled {
   .sm\:hover\:from-grey-lightest:hover {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .sm\:hover\:from-checkbox:hover {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .sm\:hover\:from-checkbox-active:hover {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .sm\:hover\:from-checkbox-disabled:hover {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .sm\:hover\:from-white:hover {
@@ -27101,18 +26443,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .sm\:hover\:via-checkbox:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .sm\:hover\:via-checkbox-active:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .sm\:hover\:via-checkbox-disabled:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .sm\:hover\:via-white:hover {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -27207,18 +26537,6 @@ input[type="radio"]:disabled {
 
   .sm\:hover\:to-grey-lightest:hover {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .sm\:hover\:to-checkbox:hover {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .sm\:hover\:to-checkbox-active:hover {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .sm\:hover\:to-checkbox-disabled:hover {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .sm\:hover\:to-white:hover {
@@ -27323,21 +26641,6 @@ input[type="radio"]:disabled {
   .sm\:focus\:from-grey-lightest:focus {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .sm\:focus\:from-checkbox:focus {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .sm\:focus\:from-checkbox-active:focus {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .sm\:focus\:from-checkbox-disabled:focus {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .sm\:focus\:from-white:focus {
@@ -27452,18 +26755,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .sm\:focus\:via-checkbox:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .sm\:focus\:via-checkbox-active:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .sm\:focus\:via-checkbox-disabled:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .sm\:focus\:via-white:focus {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -27558,18 +26849,6 @@ input[type="radio"]:disabled {
 
   .sm\:focus\:to-grey-lightest:focus {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .sm\:focus\:to-checkbox:focus {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .sm\:focus\:to-checkbox-active:focus {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .sm\:focus\:to-checkbox-disabled:focus {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .sm\:focus\:to-white:focus {
@@ -28056,21 +27335,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .sm\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .sm\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .sm\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .sm\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -28189,21 +27453,6 @@ input[type="radio"]:disabled {
   .group:hover .sm\:group-hover\:border-grey-lightest {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .group:hover .sm\:group-hover\:border-white {
@@ -28326,21 +27575,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .sm\:focus-within\:border-checkbox:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .sm\:focus-within\:border-checkbox-active:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .sm\:focus-within\:border-checkbox-disabled:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .sm\:focus-within\:border-white:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -28461,21 +27695,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .sm\:hover\:border-checkbox:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .sm\:hover\:border-checkbox-active:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .sm\:hover\:border-checkbox-disabled:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .sm\:hover\:border-white:hover {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -28594,21 +27813,6 @@ input[type="radio"]:disabled {
   .sm\:focus\:border-grey-lightest:focus {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .sm\:focus\:border-checkbox:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .sm\:focus\:border-checkbox-active:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .sm\:focus\:border-checkbox-disabled:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .sm\:focus\:border-white:focus {
@@ -34956,51 +34160,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
   }
 
-  .sm\:placeholder-checkbox::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-checkbox:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-checkbox::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-checkbox-active::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-checkbox-active:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-checkbox-active::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-checkbox-disabled::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-checkbox-disabled:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-checkbox-disabled::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
   .sm\:placeholder-white::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
@@ -35359,51 +34518,6 @@ input[type="radio"]:disabled {
   .sm\:focus\:placeholder-grey-lightest:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-checkbox:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-checkbox:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-checkbox:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-checkbox-active:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-checkbox-active:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-checkbox-active:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-checkbox-disabled:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-checkbox-disabled:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-checkbox-disabled:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-white:focus::-moz-placeholder {
@@ -39471,18 +38585,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .sm\:ring-offset-checkbox {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .sm\:ring-offset-checkbox-active {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .sm\:ring-offset-checkbox-disabled {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .sm\:ring-offset-white {
     --tw-ring-offset-color: white;
   }
@@ -39579,18 +38681,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .sm\:focus-within\:ring-offset-checkbox:focus-within {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .sm\:focus-within\:ring-offset-checkbox-active:focus-within {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .sm\:focus-within\:ring-offset-checkbox-disabled:focus-within {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .sm\:focus-within\:ring-offset-white:focus-within {
     --tw-ring-offset-color: white;
   }
@@ -39685,18 +38775,6 @@ input[type="radio"]:disabled {
 
   .sm\:focus\:ring-offset-grey-lightest:focus {
     --tw-ring-offset-color: #F6F6F6;
-  }
-
-  .sm\:focus\:ring-offset-checkbox:focus {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .sm\:focus\:ring-offset-checkbox-active:focus {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .sm\:focus\:ring-offset-checkbox-disabled:focus {
-    --tw-ring-offset-color: #E8E8E8;
   }
 
   .sm\:focus\:ring-offset-white:focus {
@@ -39863,21 +38941,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .sm\:ring-checkbox {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .sm\:ring-checkbox-active {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .sm\:ring-checkbox-disabled {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .sm\:ring-white {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -39998,21 +39061,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .sm\:focus-within\:ring-checkbox:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .sm\:focus-within\:ring-checkbox-active:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .sm\:focus-within\:ring-checkbox-disabled:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .sm\:focus-within\:ring-white:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -40131,21 +39179,6 @@ input[type="radio"]:disabled {
   .sm\:focus\:ring-grey-lightest:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
-  }
-
-  .sm\:focus\:ring-checkbox:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .sm\:focus\:ring-checkbox-active:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .sm\:focus\:ring-checkbox-disabled:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
   }
 
   .sm\:focus\:ring-white:focus {
@@ -40492,21 +39525,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .sm\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .sm\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .sm\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .sm\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -40625,21 +39643,6 @@ input[type="radio"]:disabled {
   .group:hover .sm\:group-hover\:text-grey-lightest {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .group:hover .sm\:group-hover\:text-white {
@@ -40762,21 +39765,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .sm\:focus-within\:text-checkbox:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .sm\:focus-within\:text-checkbox-active:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .sm\:focus-within\:text-checkbox-disabled:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .sm\:focus-within\:text-white:focus-within {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -40897,21 +39885,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .sm\:hover\:text-checkbox:hover {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .sm\:hover\:text-checkbox-active:hover {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .sm\:hover\:text-checkbox-disabled:hover {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .sm\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -41030,21 +40003,6 @@ input[type="radio"]:disabled {
   .sm\:focus\:text-grey-lightest:focus {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .sm\:focus\:text-checkbox:focus {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .sm\:focus\:text-checkbox-active:focus {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .sm\:focus\:text-checkbox-disabled:focus {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .sm\:focus\:text-white:focus {
@@ -42649,6 +41607,10 @@ input[type="radio"]:disabled {
 
   .sm\:grid-cols-none {
     grid-template-columns: none;
+  }
+
+  .sm\:grid-cols-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
   }
 
   .sm\:auto-cols-auto {
@@ -48074,21 +47036,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-divide-opacity));
   }
 
-  .md\:divide-checkbox > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-divide-opacity));
-  }
-
-  .md\:divide-checkbox-active > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-divide-opacity));
-  }
-
-  .md\:divide-checkbox-disabled > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-divide-opacity));
-  }
-
   .md\:divide-white > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
@@ -48393,21 +47340,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .md\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .md\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .md\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .md\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -48526,21 +47458,6 @@ input[type="radio"]:disabled {
   .group:hover .md\:group-hover\:bg-grey-lightest {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .group:hover .md\:group-hover\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .group:hover .md\:group-hover\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .group:hover .md\:group-hover\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-white {
@@ -48663,21 +47580,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .md\:focus-within\:bg-checkbox:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .md\:focus-within\:bg-checkbox-active:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .md\:focus-within\:bg-checkbox-disabled:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .md\:focus-within\:bg-white:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -48796,21 +47698,6 @@ input[type="radio"]:disabled {
   .md\:hover\:bg-grey-lightest:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .md\:hover\:bg-checkbox:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .md\:hover\:bg-checkbox-active:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .md\:hover\:bg-checkbox-disabled:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-white:hover {
@@ -48933,21 +47820,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .md\:focus\:bg-checkbox:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .md\:focus\:bg-checkbox-active:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .md\:focus\:bg-checkbox-disabled:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .md\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -49066,21 +47938,6 @@ input[type="radio"]:disabled {
   .md\:disabled\:bg-grey-lightest:disabled {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .md\:disabled\:bg-checkbox:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .md\:disabled\:bg-checkbox-active:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .md\:disabled\:bg-checkbox-disabled:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .md\:disabled\:bg-white:disabled {
@@ -49239,21 +48096,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .md\:from-checkbox {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .md\:from-checkbox-active {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .md\:from-checkbox-disabled {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .md\:from-white {
     --tw-gradient-from: white;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
@@ -49366,18 +48208,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .md\:via-checkbox {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .md\:via-checkbox-active {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .md\:via-checkbox-disabled {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .md\:via-white {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -49472,18 +48302,6 @@ input[type="radio"]:disabled {
 
   .md\:to-grey-lightest {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .md\:to-checkbox {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .md\:to-checkbox-active {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .md\:to-checkbox-disabled {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .md\:to-white {
@@ -49588,21 +48406,6 @@ input[type="radio"]:disabled {
   .md\:hover\:from-grey-lightest:hover {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .md\:hover\:from-checkbox:hover {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .md\:hover\:from-checkbox-active:hover {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .md\:hover\:from-checkbox-disabled:hover {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .md\:hover\:from-white:hover {
@@ -49717,18 +48520,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .md\:hover\:via-checkbox:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .md\:hover\:via-checkbox-active:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .md\:hover\:via-checkbox-disabled:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .md\:hover\:via-white:hover {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -49823,18 +48614,6 @@ input[type="radio"]:disabled {
 
   .md\:hover\:to-grey-lightest:hover {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .md\:hover\:to-checkbox:hover {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .md\:hover\:to-checkbox-active:hover {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .md\:hover\:to-checkbox-disabled:hover {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .md\:hover\:to-white:hover {
@@ -49939,21 +48718,6 @@ input[type="radio"]:disabled {
   .md\:focus\:from-grey-lightest:focus {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .md\:focus\:from-checkbox:focus {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .md\:focus\:from-checkbox-active:focus {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .md\:focus\:from-checkbox-disabled:focus {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .md\:focus\:from-white:focus {
@@ -50068,18 +48832,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .md\:focus\:via-checkbox:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .md\:focus\:via-checkbox-active:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .md\:focus\:via-checkbox-disabled:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .md\:focus\:via-white:focus {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -50174,18 +48926,6 @@ input[type="radio"]:disabled {
 
   .md\:focus\:to-grey-lightest:focus {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .md\:focus\:to-checkbox:focus {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .md\:focus\:to-checkbox-active:focus {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .md\:focus\:to-checkbox-disabled:focus {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .md\:focus\:to-white:focus {
@@ -50672,21 +49412,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .md\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .md\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .md\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .md\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -50805,21 +49530,6 @@ input[type="radio"]:disabled {
   .group:hover .md\:group-hover\:border-grey-lightest {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .group:hover .md\:group-hover\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .group:hover .md\:group-hover\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .group:hover .md\:group-hover\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .group:hover .md\:group-hover\:border-white {
@@ -50942,21 +49652,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .md\:focus-within\:border-checkbox:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .md\:focus-within\:border-checkbox-active:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .md\:focus-within\:border-checkbox-disabled:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .md\:focus-within\:border-white:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -51077,21 +49772,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .md\:hover\:border-checkbox:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .md\:hover\:border-checkbox-active:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .md\:hover\:border-checkbox-disabled:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .md\:hover\:border-white:hover {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -51210,21 +49890,6 @@ input[type="radio"]:disabled {
   .md\:focus\:border-grey-lightest:focus {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .md\:focus\:border-checkbox:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .md\:focus\:border-checkbox-active:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .md\:focus\:border-checkbox-disabled:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .md\:focus\:border-white:focus {
@@ -57572,51 +56237,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
   }
 
-  .md\:placeholder-checkbox::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-checkbox:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-checkbox::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-checkbox-active::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-checkbox-active:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-checkbox-active::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-checkbox-disabled::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-checkbox-disabled:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-checkbox-disabled::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
   .md\:placeholder-white::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
@@ -57975,51 +56595,6 @@ input[type="radio"]:disabled {
   .md\:focus\:placeholder-grey-lightest:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-checkbox:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-checkbox:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-checkbox:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-checkbox-active:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-checkbox-active:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-checkbox-active:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-checkbox-disabled:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-checkbox-disabled:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-checkbox-disabled:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-white:focus::-moz-placeholder {
@@ -62087,18 +60662,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .md\:ring-offset-checkbox {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .md\:ring-offset-checkbox-active {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .md\:ring-offset-checkbox-disabled {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .md\:ring-offset-white {
     --tw-ring-offset-color: white;
   }
@@ -62195,18 +60758,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .md\:focus-within\:ring-offset-checkbox:focus-within {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .md\:focus-within\:ring-offset-checkbox-active:focus-within {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .md\:focus-within\:ring-offset-checkbox-disabled:focus-within {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .md\:focus-within\:ring-offset-white:focus-within {
     --tw-ring-offset-color: white;
   }
@@ -62301,18 +60852,6 @@ input[type="radio"]:disabled {
 
   .md\:focus\:ring-offset-grey-lightest:focus {
     --tw-ring-offset-color: #F6F6F6;
-  }
-
-  .md\:focus\:ring-offset-checkbox:focus {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .md\:focus\:ring-offset-checkbox-active:focus {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .md\:focus\:ring-offset-checkbox-disabled:focus {
-    --tw-ring-offset-color: #E8E8E8;
   }
 
   .md\:focus\:ring-offset-white:focus {
@@ -62479,21 +61018,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .md\:ring-checkbox {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .md\:ring-checkbox-active {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .md\:ring-checkbox-disabled {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .md\:ring-white {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -62614,21 +61138,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .md\:focus-within\:ring-checkbox:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .md\:focus-within\:ring-checkbox-active:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .md\:focus-within\:ring-checkbox-disabled:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .md\:focus-within\:ring-white:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -62747,21 +61256,6 @@ input[type="radio"]:disabled {
   .md\:focus\:ring-grey-lightest:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
-  }
-
-  .md\:focus\:ring-checkbox:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .md\:focus\:ring-checkbox-active:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .md\:focus\:ring-checkbox-disabled:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
   }
 
   .md\:focus\:ring-white:focus {
@@ -63108,21 +61602,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .md\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .md\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .md\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .md\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -63241,21 +61720,6 @@ input[type="radio"]:disabled {
   .group:hover .md\:group-hover\:text-grey-lightest {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .group:hover .md\:group-hover\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .group:hover .md\:group-hover\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .group:hover .md\:group-hover\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .group:hover .md\:group-hover\:text-white {
@@ -63378,21 +61842,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .md\:focus-within\:text-checkbox:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .md\:focus-within\:text-checkbox-active:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .md\:focus-within\:text-checkbox-disabled:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .md\:focus-within\:text-white:focus-within {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -63513,21 +61962,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .md\:hover\:text-checkbox:hover {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .md\:hover\:text-checkbox-active:hover {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .md\:hover\:text-checkbox-disabled:hover {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .md\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -63646,21 +62080,6 @@ input[type="radio"]:disabled {
   .md\:focus\:text-grey-lightest:focus {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .md\:focus\:text-checkbox:focus {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .md\:focus\:text-checkbox-active:focus {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .md\:focus\:text-checkbox-disabled:focus {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .md\:focus\:text-white:focus {
@@ -65265,6 +63684,10 @@ input[type="radio"]:disabled {
 
   .md\:grid-cols-none {
     grid-template-columns: none;
+  }
+
+  .md\:grid-cols-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
   }
 
   .md\:auto-cols-auto {
@@ -70690,21 +69113,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-divide-opacity));
   }
 
-  .lg\:divide-checkbox > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-divide-opacity));
-  }
-
-  .lg\:divide-checkbox-active > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-divide-opacity));
-  }
-
-  .lg\:divide-checkbox-disabled > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-divide-opacity));
-  }
-
   .lg\:divide-white > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
@@ -71009,21 +69417,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .lg\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .lg\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .lg\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .lg\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -71142,21 +69535,6 @@ input[type="radio"]:disabled {
   .group:hover .lg\:group-hover\:bg-grey-lightest {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-white {
@@ -71279,21 +69657,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .lg\:focus-within\:bg-checkbox:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .lg\:focus-within\:bg-checkbox-active:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .lg\:focus-within\:bg-checkbox-disabled:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .lg\:focus-within\:bg-white:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -71412,21 +69775,6 @@ input[type="radio"]:disabled {
   .lg\:hover\:bg-grey-lightest:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .lg\:hover\:bg-checkbox:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .lg\:hover\:bg-checkbox-active:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .lg\:hover\:bg-checkbox-disabled:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-white:hover {
@@ -71549,21 +69897,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .lg\:focus\:bg-checkbox:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .lg\:focus\:bg-checkbox-active:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .lg\:focus\:bg-checkbox-disabled:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .lg\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -71682,21 +70015,6 @@ input[type="radio"]:disabled {
   .lg\:disabled\:bg-grey-lightest:disabled {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .lg\:disabled\:bg-checkbox:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .lg\:disabled\:bg-checkbox-active:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .lg\:disabled\:bg-checkbox-disabled:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .lg\:disabled\:bg-white:disabled {
@@ -71855,21 +70173,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .lg\:from-checkbox {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .lg\:from-checkbox-active {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .lg\:from-checkbox-disabled {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .lg\:from-white {
     --tw-gradient-from: white;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
@@ -71982,18 +70285,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .lg\:via-checkbox {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .lg\:via-checkbox-active {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .lg\:via-checkbox-disabled {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .lg\:via-white {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -72088,18 +70379,6 @@ input[type="radio"]:disabled {
 
   .lg\:to-grey-lightest {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .lg\:to-checkbox {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .lg\:to-checkbox-active {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .lg\:to-checkbox-disabled {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .lg\:to-white {
@@ -72204,21 +70483,6 @@ input[type="radio"]:disabled {
   .lg\:hover\:from-grey-lightest:hover {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .lg\:hover\:from-checkbox:hover {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .lg\:hover\:from-checkbox-active:hover {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .lg\:hover\:from-checkbox-disabled:hover {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .lg\:hover\:from-white:hover {
@@ -72333,18 +70597,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .lg\:hover\:via-checkbox:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .lg\:hover\:via-checkbox-active:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .lg\:hover\:via-checkbox-disabled:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .lg\:hover\:via-white:hover {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -72439,18 +70691,6 @@ input[type="radio"]:disabled {
 
   .lg\:hover\:to-grey-lightest:hover {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .lg\:hover\:to-checkbox:hover {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .lg\:hover\:to-checkbox-active:hover {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .lg\:hover\:to-checkbox-disabled:hover {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .lg\:hover\:to-white:hover {
@@ -72555,21 +70795,6 @@ input[type="radio"]:disabled {
   .lg\:focus\:from-grey-lightest:focus {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .lg\:focus\:from-checkbox:focus {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .lg\:focus\:from-checkbox-active:focus {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .lg\:focus\:from-checkbox-disabled:focus {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .lg\:focus\:from-white:focus {
@@ -72684,18 +70909,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .lg\:focus\:via-checkbox:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .lg\:focus\:via-checkbox-active:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .lg\:focus\:via-checkbox-disabled:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .lg\:focus\:via-white:focus {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -72790,18 +71003,6 @@ input[type="radio"]:disabled {
 
   .lg\:focus\:to-grey-lightest:focus {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .lg\:focus\:to-checkbox:focus {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .lg\:focus\:to-checkbox-active:focus {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .lg\:focus\:to-checkbox-disabled:focus {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .lg\:focus\:to-white:focus {
@@ -73288,21 +71489,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .lg\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .lg\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .lg\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .lg\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -73421,21 +71607,6 @@ input[type="radio"]:disabled {
   .group:hover .lg\:group-hover\:border-grey-lightest {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .group:hover .lg\:group-hover\:border-white {
@@ -73558,21 +71729,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .lg\:focus-within\:border-checkbox:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .lg\:focus-within\:border-checkbox-active:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .lg\:focus-within\:border-checkbox-disabled:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .lg\:focus-within\:border-white:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -73693,21 +71849,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .lg\:hover\:border-checkbox:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .lg\:hover\:border-checkbox-active:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .lg\:hover\:border-checkbox-disabled:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .lg\:hover\:border-white:hover {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -73826,21 +71967,6 @@ input[type="radio"]:disabled {
   .lg\:focus\:border-grey-lightest:focus {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .lg\:focus\:border-checkbox:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .lg\:focus\:border-checkbox-active:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .lg\:focus\:border-checkbox-disabled:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .lg\:focus\:border-white:focus {
@@ -80188,51 +78314,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
   }
 
-  .lg\:placeholder-checkbox::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-checkbox:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-checkbox::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-checkbox-active::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-checkbox-active:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-checkbox-active::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-checkbox-disabled::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-checkbox-disabled:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-checkbox-disabled::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
   .lg\:placeholder-white::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
@@ -80591,51 +78672,6 @@ input[type="radio"]:disabled {
   .lg\:focus\:placeholder-grey-lightest:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-checkbox:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-checkbox:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-checkbox:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-checkbox-active:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-checkbox-active:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-checkbox-active:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-checkbox-disabled:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-checkbox-disabled:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-checkbox-disabled:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-white:focus::-moz-placeholder {
@@ -84703,18 +82739,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .lg\:ring-offset-checkbox {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .lg\:ring-offset-checkbox-active {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .lg\:ring-offset-checkbox-disabled {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .lg\:ring-offset-white {
     --tw-ring-offset-color: white;
   }
@@ -84811,18 +82835,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .lg\:focus-within\:ring-offset-checkbox:focus-within {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .lg\:focus-within\:ring-offset-checkbox-active:focus-within {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .lg\:focus-within\:ring-offset-checkbox-disabled:focus-within {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .lg\:focus-within\:ring-offset-white:focus-within {
     --tw-ring-offset-color: white;
   }
@@ -84917,18 +82929,6 @@ input[type="radio"]:disabled {
 
   .lg\:focus\:ring-offset-grey-lightest:focus {
     --tw-ring-offset-color: #F6F6F6;
-  }
-
-  .lg\:focus\:ring-offset-checkbox:focus {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .lg\:focus\:ring-offset-checkbox-active:focus {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .lg\:focus\:ring-offset-checkbox-disabled:focus {
-    --tw-ring-offset-color: #E8E8E8;
   }
 
   .lg\:focus\:ring-offset-white:focus {
@@ -85095,21 +83095,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .lg\:ring-checkbox {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .lg\:ring-checkbox-active {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .lg\:ring-checkbox-disabled {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .lg\:ring-white {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -85230,21 +83215,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .lg\:focus-within\:ring-checkbox:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .lg\:focus-within\:ring-checkbox-active:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .lg\:focus-within\:ring-checkbox-disabled:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .lg\:focus-within\:ring-white:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -85363,21 +83333,6 @@ input[type="radio"]:disabled {
   .lg\:focus\:ring-grey-lightest:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
-  }
-
-  .lg\:focus\:ring-checkbox:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .lg\:focus\:ring-checkbox-active:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .lg\:focus\:ring-checkbox-disabled:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
   }
 
   .lg\:focus\:ring-white:focus {
@@ -85724,21 +83679,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .lg\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .lg\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .lg\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .lg\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -85857,21 +83797,6 @@ input[type="radio"]:disabled {
   .group:hover .lg\:group-hover\:text-grey-lightest {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .group:hover .lg\:group-hover\:text-white {
@@ -85994,21 +83919,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .lg\:focus-within\:text-checkbox:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .lg\:focus-within\:text-checkbox-active:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .lg\:focus-within\:text-checkbox-disabled:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .lg\:focus-within\:text-white:focus-within {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -86129,21 +84039,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .lg\:hover\:text-checkbox:hover {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .lg\:hover\:text-checkbox-active:hover {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .lg\:hover\:text-checkbox-disabled:hover {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .lg\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -86262,21 +84157,6 @@ input[type="radio"]:disabled {
   .lg\:focus\:text-grey-lightest:focus {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .lg\:focus\:text-checkbox:focus {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .lg\:focus\:text-checkbox-active:focus {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .lg\:focus\:text-checkbox-disabled:focus {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .lg\:focus\:text-white:focus {
@@ -87881,6 +85761,10 @@ input[type="radio"]:disabled {
 
   .lg\:grid-cols-none {
     grid-template-columns: none;
+  }
+
+  .lg\:grid-cols-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
   }
 
   .lg\:auto-cols-auto {
@@ -93306,21 +91190,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-divide-opacity));
   }
 
-  .xl\:divide-checkbox > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-divide-opacity));
-  }
-
-  .xl\:divide-checkbox-active > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-divide-opacity));
-  }
-
-  .xl\:divide-checkbox-disabled > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-divide-opacity));
-  }
-
   .xl\:divide-white > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
@@ -93625,21 +91494,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .xl\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .xl\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .xl\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .xl\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -93758,21 +91612,6 @@ input[type="radio"]:disabled {
   .group:hover .xl\:group-hover\:bg-grey-lightest {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-white {
@@ -93895,21 +91734,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .xl\:focus-within\:bg-checkbox:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .xl\:focus-within\:bg-checkbox-active:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .xl\:focus-within\:bg-checkbox-disabled:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .xl\:focus-within\:bg-white:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -94028,21 +91852,6 @@ input[type="radio"]:disabled {
   .xl\:hover\:bg-grey-lightest:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .xl\:hover\:bg-checkbox:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .xl\:hover\:bg-checkbox-active:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .xl\:hover\:bg-checkbox-disabled:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-white:hover {
@@ -94165,21 +91974,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .xl\:focus\:bg-checkbox:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .xl\:focus\:bg-checkbox-active:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .xl\:focus\:bg-checkbox-disabled:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .xl\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -94298,21 +92092,6 @@ input[type="radio"]:disabled {
   .xl\:disabled\:bg-grey-lightest:disabled {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .xl\:disabled\:bg-checkbox:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .xl\:disabled\:bg-checkbox-active:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .xl\:disabled\:bg-checkbox-disabled:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .xl\:disabled\:bg-white:disabled {
@@ -94471,21 +92250,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .xl\:from-checkbox {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .xl\:from-checkbox-active {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .xl\:from-checkbox-disabled {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .xl\:from-white {
     --tw-gradient-from: white;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
@@ -94598,18 +92362,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .xl\:via-checkbox {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .xl\:via-checkbox-active {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .xl\:via-checkbox-disabled {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .xl\:via-white {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -94704,18 +92456,6 @@ input[type="radio"]:disabled {
 
   .xl\:to-grey-lightest {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .xl\:to-checkbox {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .xl\:to-checkbox-active {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .xl\:to-checkbox-disabled {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .xl\:to-white {
@@ -94820,21 +92560,6 @@ input[type="radio"]:disabled {
   .xl\:hover\:from-grey-lightest:hover {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .xl\:hover\:from-checkbox:hover {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .xl\:hover\:from-checkbox-active:hover {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .xl\:hover\:from-checkbox-disabled:hover {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .xl\:hover\:from-white:hover {
@@ -94949,18 +92674,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .xl\:hover\:via-checkbox:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .xl\:hover\:via-checkbox-active:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .xl\:hover\:via-checkbox-disabled:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .xl\:hover\:via-white:hover {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -95055,18 +92768,6 @@ input[type="radio"]:disabled {
 
   .xl\:hover\:to-grey-lightest:hover {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .xl\:hover\:to-checkbox:hover {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .xl\:hover\:to-checkbox-active:hover {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .xl\:hover\:to-checkbox-disabled:hover {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .xl\:hover\:to-white:hover {
@@ -95171,21 +92872,6 @@ input[type="radio"]:disabled {
   .xl\:focus\:from-grey-lightest:focus {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .xl\:focus\:from-checkbox:focus {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .xl\:focus\:from-checkbox-active:focus {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .xl\:focus\:from-checkbox-disabled:focus {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .xl\:focus\:from-white:focus {
@@ -95300,18 +92986,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .xl\:focus\:via-checkbox:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .xl\:focus\:via-checkbox-active:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .xl\:focus\:via-checkbox-disabled:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .xl\:focus\:via-white:focus {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -95406,18 +93080,6 @@ input[type="radio"]:disabled {
 
   .xl\:focus\:to-grey-lightest:focus {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .xl\:focus\:to-checkbox:focus {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .xl\:focus\:to-checkbox-active:focus {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .xl\:focus\:to-checkbox-disabled:focus {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .xl\:focus\:to-white:focus {
@@ -95904,21 +93566,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .xl\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .xl\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .xl\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .xl\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -96037,21 +93684,6 @@ input[type="radio"]:disabled {
   .group:hover .xl\:group-hover\:border-grey-lightest {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .group:hover .xl\:group-hover\:border-white {
@@ -96174,21 +93806,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .xl\:focus-within\:border-checkbox:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .xl\:focus-within\:border-checkbox-active:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .xl\:focus-within\:border-checkbox-disabled:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .xl\:focus-within\:border-white:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -96309,21 +93926,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .xl\:hover\:border-checkbox:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .xl\:hover\:border-checkbox-active:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .xl\:hover\:border-checkbox-disabled:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .xl\:hover\:border-white:hover {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -96442,21 +94044,6 @@ input[type="radio"]:disabled {
   .xl\:focus\:border-grey-lightest:focus {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .xl\:focus\:border-checkbox:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .xl\:focus\:border-checkbox-active:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .xl\:focus\:border-checkbox-disabled:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .xl\:focus\:border-white:focus {
@@ -102804,51 +100391,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
   }
 
-  .xl\:placeholder-checkbox::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-checkbox:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-checkbox::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-checkbox-active::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-checkbox-active:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-checkbox-active::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-checkbox-disabled::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-checkbox-disabled:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-checkbox-disabled::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
   .xl\:placeholder-white::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
@@ -103207,51 +100749,6 @@ input[type="radio"]:disabled {
   .xl\:focus\:placeholder-grey-lightest:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-checkbox:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-checkbox:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-checkbox:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-checkbox-active:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-checkbox-active:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-checkbox-active:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-checkbox-disabled:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-checkbox-disabled:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-checkbox-disabled:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-white:focus::-moz-placeholder {
@@ -107319,18 +104816,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .xl\:ring-offset-checkbox {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .xl\:ring-offset-checkbox-active {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .xl\:ring-offset-checkbox-disabled {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .xl\:ring-offset-white {
     --tw-ring-offset-color: white;
   }
@@ -107427,18 +104912,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .xl\:focus-within\:ring-offset-checkbox:focus-within {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .xl\:focus-within\:ring-offset-checkbox-active:focus-within {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .xl\:focus-within\:ring-offset-checkbox-disabled:focus-within {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .xl\:focus-within\:ring-offset-white:focus-within {
     --tw-ring-offset-color: white;
   }
@@ -107533,18 +105006,6 @@ input[type="radio"]:disabled {
 
   .xl\:focus\:ring-offset-grey-lightest:focus {
     --tw-ring-offset-color: #F6F6F6;
-  }
-
-  .xl\:focus\:ring-offset-checkbox:focus {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .xl\:focus\:ring-offset-checkbox-active:focus {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .xl\:focus\:ring-offset-checkbox-disabled:focus {
-    --tw-ring-offset-color: #E8E8E8;
   }
 
   .xl\:focus\:ring-offset-white:focus {
@@ -107711,21 +105172,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .xl\:ring-checkbox {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .xl\:ring-checkbox-active {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .xl\:ring-checkbox-disabled {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .xl\:ring-white {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -107846,21 +105292,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .xl\:focus-within\:ring-checkbox:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .xl\:focus-within\:ring-checkbox-active:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .xl\:focus-within\:ring-checkbox-disabled:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .xl\:focus-within\:ring-white:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -107979,21 +105410,6 @@ input[type="radio"]:disabled {
   .xl\:focus\:ring-grey-lightest:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
-  }
-
-  .xl\:focus\:ring-checkbox:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .xl\:focus\:ring-checkbox-active:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .xl\:focus\:ring-checkbox-disabled:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
   }
 
   .xl\:focus\:ring-white:focus {
@@ -108340,21 +105756,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .xl\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .xl\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .xl\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .xl\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -108473,21 +105874,6 @@ input[type="radio"]:disabled {
   .group:hover .xl\:group-hover\:text-grey-lightest {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .group:hover .xl\:group-hover\:text-white {
@@ -108610,21 +105996,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .xl\:focus-within\:text-checkbox:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .xl\:focus-within\:text-checkbox-active:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .xl\:focus-within\:text-checkbox-disabled:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .xl\:focus-within\:text-white:focus-within {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -108745,21 +106116,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .xl\:hover\:text-checkbox:hover {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .xl\:hover\:text-checkbox-active:hover {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .xl\:hover\:text-checkbox-disabled:hover {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .xl\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -108878,21 +106234,6 @@ input[type="radio"]:disabled {
   .xl\:focus\:text-grey-lightest:focus {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .xl\:focus\:text-checkbox:focus {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .xl\:focus\:text-checkbox-active:focus {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .xl\:focus\:text-checkbox-disabled:focus {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .xl\:focus\:text-white:focus {
@@ -110497,6 +107838,10 @@ input[type="radio"]:disabled {
 
   .xl\:grid-cols-none {
     grid-template-columns: none;
+  }
+
+  .xl\:grid-cols-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
   }
 
   .xl\:auto-cols-auto {
@@ -115922,21 +113267,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-divide-opacity));
   }
 
-  .\32xl\:divide-checkbox > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-divide-opacity));
-  }
-
-  .\32xl\:divide-checkbox-active > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-divide-opacity));
-  }
-
-  .\32xl\:divide-checkbox-disabled > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-divide-opacity));
-  }
-
   .\32xl\:divide-white > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-divide-opacity));
@@ -116241,21 +113571,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .\32xl\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .\32xl\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -116374,21 +113689,6 @@ input[type="radio"]:disabled {
   .group:hover .\32xl\:group-hover\:bg-grey-lightest {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:bg-checkbox {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:bg-checkbox-active {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:bg-checkbox-disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-white {
@@ -116511,21 +113811,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .\32xl\:focus-within\:bg-checkbox:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:focus-within\:bg-checkbox-active:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:focus-within\:bg-checkbox-disabled:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .\32xl\:focus-within\:bg-white:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -116644,21 +113929,6 @@ input[type="radio"]:disabled {
   .\32xl\:hover\:bg-grey-lightest:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:hover\:bg-checkbox:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:hover\:bg-checkbox-active:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:hover\:bg-checkbox-disabled:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-white:hover {
@@ -116781,21 +114051,6 @@ input[type="radio"]:disabled {
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
   }
 
-  .\32xl\:focus\:bg-checkbox:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:focus\:bg-checkbox-active:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:focus\:bg-checkbox-disabled:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
-  }
-
   .\32xl\:focus\:bg-white:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -116914,21 +114169,6 @@ input[type="radio"]:disabled {
   .\32xl\:disabled\:bg-grey-lightest:disabled {
     --tw-bg-opacity: 1;
     background-color: rgba(246, 246, 246, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:disabled\:bg-checkbox:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(216, 221, 224, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:disabled\:bg-checkbox-active:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(66, 99, 235, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:disabled\:bg-checkbox-disabled:disabled {
-    --tw-bg-opacity: 1;
-    background-color: rgba(232, 232, 232, var(--tw-bg-opacity));
   }
 
   .\32xl\:disabled\:bg-white:disabled {
@@ -117087,21 +114327,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .\32xl\:from-checkbox {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .\32xl\:from-checkbox-active {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .\32xl\:from-checkbox-disabled {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .\32xl\:from-white {
     --tw-gradient-from: white;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
@@ -117214,18 +114439,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .\32xl\:via-checkbox {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .\32xl\:via-checkbox-active {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .\32xl\:via-checkbox-disabled {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .\32xl\:via-white {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -117320,18 +114533,6 @@ input[type="radio"]:disabled {
 
   .\32xl\:to-grey-lightest {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .\32xl\:to-checkbox {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .\32xl\:to-checkbox-active {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .\32xl\:to-checkbox-disabled {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .\32xl\:to-white {
@@ -117436,21 +114637,6 @@ input[type="radio"]:disabled {
   .\32xl\:hover\:from-grey-lightest:hover {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .\32xl\:hover\:from-checkbox:hover {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .\32xl\:hover\:from-checkbox-active:hover {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .\32xl\:hover\:from-checkbox-disabled:hover {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .\32xl\:hover\:from-white:hover {
@@ -117565,18 +114751,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .\32xl\:hover\:via-checkbox:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .\32xl\:hover\:via-checkbox-active:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .\32xl\:hover\:via-checkbox-disabled:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .\32xl\:hover\:via-white:hover {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -117671,18 +114845,6 @@ input[type="radio"]:disabled {
 
   .\32xl\:hover\:to-grey-lightest:hover {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .\32xl\:hover\:to-checkbox:hover {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .\32xl\:hover\:to-checkbox-active:hover {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .\32xl\:hover\:to-checkbox-disabled:hover {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .\32xl\:hover\:to-white:hover {
@@ -117787,21 +114949,6 @@ input[type="radio"]:disabled {
   .\32xl\:focus\:from-grey-lightest:focus {
     --tw-gradient-from: #F6F6F6;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(246, 246, 246, 0));
-  }
-
-  .\32xl\:focus\:from-checkbox:focus {
-    --tw-gradient-from: #D8DDE0;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .\32xl\:focus\:from-checkbox-active:focus {
-    --tw-gradient-from: #4263EB;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .\32xl\:focus\:from-checkbox-disabled:focus {
-    --tw-gradient-from: #E8E8E8;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(232, 232, 232, 0));
   }
 
   .\32xl\:focus\:from-white:focus {
@@ -117916,18 +115063,6 @@ input[type="radio"]:disabled {
     --tw-gradient-stops: var(--tw-gradient-from), #F6F6F6, var(--tw-gradient-to, rgba(246, 246, 246, 0));
   }
 
-  .\32xl\:focus\:via-checkbox:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #D8DDE0, var(--tw-gradient-to, rgba(216, 221, 224, 0));
-  }
-
-  .\32xl\:focus\:via-checkbox-active:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #4263EB, var(--tw-gradient-to, rgba(66, 99, 235, 0));
-  }
-
-  .\32xl\:focus\:via-checkbox-disabled:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #E8E8E8, var(--tw-gradient-to, rgba(232, 232, 232, 0));
-  }
-
   .\32xl\:focus\:via-white:focus {
     --tw-gradient-stops: var(--tw-gradient-from), white, var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
@@ -118022,18 +115157,6 @@ input[type="radio"]:disabled {
 
   .\32xl\:focus\:to-grey-lightest:focus {
     --tw-gradient-to: #F6F6F6;
-  }
-
-  .\32xl\:focus\:to-checkbox:focus {
-    --tw-gradient-to: #D8DDE0;
-  }
-
-  .\32xl\:focus\:to-checkbox-active:focus {
-    --tw-gradient-to: #4263EB;
-  }
-
-  .\32xl\:focus\:to-checkbox-disabled:focus {
-    --tw-gradient-to: #E8E8E8;
   }
 
   .\32xl\:focus\:to-white:focus {
@@ -118520,21 +115643,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .\32xl\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .\32xl\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .\32xl\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .\32xl\:border-white {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -118653,21 +115761,6 @@ input[type="radio"]:disabled {
   .group:hover .\32xl\:group-hover\:border-grey-lightest {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:border-checkbox {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:border-checkbox-active {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:border-checkbox-disabled {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:border-white {
@@ -118790,21 +115883,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .\32xl\:focus-within\:border-checkbox:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .\32xl\:focus-within\:border-checkbox-active:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .\32xl\:focus-within\:border-checkbox-disabled:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .\32xl\:focus-within\:border-white:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -118925,21 +116003,6 @@ input[type="radio"]:disabled {
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
   }
 
-  .\32xl\:hover\:border-checkbox:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .\32xl\:hover\:border-checkbox-active:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .\32xl\:hover\:border-checkbox-disabled:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
-  }
-
   .\32xl\:hover\:border-white:hover {
     --tw-border-opacity: 1;
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
@@ -119058,21 +116121,6 @@ input[type="radio"]:disabled {
   .\32xl\:focus\:border-grey-lightest:focus {
     --tw-border-opacity: 1;
     border-color: rgba(246, 246, 246, var(--tw-border-opacity));
-  }
-
-  .\32xl\:focus\:border-checkbox:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(216, 221, 224, var(--tw-border-opacity));
-  }
-
-  .\32xl\:focus\:border-checkbox-active:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(66, 99, 235, var(--tw-border-opacity));
-  }
-
-  .\32xl\:focus\:border-checkbox-disabled:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(232, 232, 232, var(--tw-border-opacity));
   }
 
   .\32xl\:focus\:border-white:focus {
@@ -125420,51 +122468,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:placeholder-checkbox::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-checkbox:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-checkbox::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-checkbox-active::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-checkbox-active:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-checkbox-active::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-checkbox-disabled::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-checkbox-disabled:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-checkbox-disabled::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
   .\32xl\:placeholder-white::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
@@ -125823,51 +122826,6 @@ input[type="radio"]:disabled {
   .\32xl\:focus\:placeholder-grey-lightest:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-checkbox:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-checkbox:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-checkbox:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-checkbox-active:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-checkbox-active:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-checkbox-active:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-checkbox-disabled:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-checkbox-disabled:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-checkbox-disabled:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-white:focus::-moz-placeholder {
@@ -129935,18 +126893,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .\32xl\:ring-offset-checkbox {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .\32xl\:ring-offset-checkbox-active {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .\32xl\:ring-offset-checkbox-disabled {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .\32xl\:ring-offset-white {
     --tw-ring-offset-color: white;
   }
@@ -130043,18 +126989,6 @@ input[type="radio"]:disabled {
     --tw-ring-offset-color: #F6F6F6;
   }
 
-  .\32xl\:focus-within\:ring-offset-checkbox:focus-within {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .\32xl\:focus-within\:ring-offset-checkbox-active:focus-within {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .\32xl\:focus-within\:ring-offset-checkbox-disabled:focus-within {
-    --tw-ring-offset-color: #E8E8E8;
-  }
-
   .\32xl\:focus-within\:ring-offset-white:focus-within {
     --tw-ring-offset-color: white;
   }
@@ -130149,18 +127083,6 @@ input[type="radio"]:disabled {
 
   .\32xl\:focus\:ring-offset-grey-lightest:focus {
     --tw-ring-offset-color: #F6F6F6;
-  }
-
-  .\32xl\:focus\:ring-offset-checkbox:focus {
-    --tw-ring-offset-color: #D8DDE0;
-  }
-
-  .\32xl\:focus\:ring-offset-checkbox-active:focus {
-    --tw-ring-offset-color: #4263EB;
-  }
-
-  .\32xl\:focus\:ring-offset-checkbox-disabled:focus {
-    --tw-ring-offset-color: #E8E8E8;
   }
 
   .\32xl\:focus\:ring-offset-white:focus {
@@ -130327,21 +127249,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .\32xl\:ring-checkbox {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .\32xl\:ring-checkbox-active {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .\32xl\:ring-checkbox-disabled {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .\32xl\:ring-white {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -130462,21 +127369,6 @@ input[type="radio"]:disabled {
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
   }
 
-  .\32xl\:focus-within\:ring-checkbox:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .\32xl\:focus-within\:ring-checkbox-active:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .\32xl\:focus-within\:ring-checkbox-disabled:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
-  }
-
   .\32xl\:focus-within\:ring-white:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(255, 255, 255, var(--tw-ring-opacity));
@@ -130595,21 +127487,6 @@ input[type="radio"]:disabled {
   .\32xl\:focus\:ring-grey-lightest:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(246, 246, 246, var(--tw-ring-opacity));
-  }
-
-  .\32xl\:focus\:ring-checkbox:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(216, 221, 224, var(--tw-ring-opacity));
-  }
-
-  .\32xl\:focus\:ring-checkbox-active:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(66, 99, 235, var(--tw-ring-opacity));
-  }
-
-  .\32xl\:focus\:ring-checkbox-disabled:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(232, 232, 232, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus\:ring-white:focus {
@@ -130956,21 +127833,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .\32xl\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .\32xl\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .\32xl\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .\32xl\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -131089,21 +127951,6 @@ input[type="radio"]:disabled {
   .group:hover .\32xl\:group-hover\:text-grey-lightest {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:text-checkbox {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:text-checkbox-active {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:text-checkbox-disabled {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:text-white {
@@ -131226,21 +128073,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .\32xl\:focus-within\:text-checkbox:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .\32xl\:focus-within\:text-checkbox-active:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .\32xl\:focus-within\:text-checkbox-disabled:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .\32xl\:focus-within\:text-white:focus-within {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -131361,21 +128193,6 @@ input[type="radio"]:disabled {
     color: rgba(246, 246, 246, var(--tw-text-opacity));
   }
 
-  .\32xl\:hover\:text-checkbox:hover {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .\32xl\:hover\:text-checkbox-active:hover {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .\32xl\:hover\:text-checkbox-disabled:hover {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
-  }
-
   .\32xl\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -131494,21 +128311,6 @@ input[type="radio"]:disabled {
   .\32xl\:focus\:text-grey-lightest:focus {
     --tw-text-opacity: 1;
     color: rgba(246, 246, 246, var(--tw-text-opacity));
-  }
-
-  .\32xl\:focus\:text-checkbox:focus {
-    --tw-text-opacity: 1;
-    color: rgba(216, 221, 224, var(--tw-text-opacity));
-  }
-
-  .\32xl\:focus\:text-checkbox-active:focus {
-    --tw-text-opacity: 1;
-    color: rgba(66, 99, 235, var(--tw-text-opacity));
-  }
-
-  .\32xl\:focus\:text-checkbox-disabled:focus {
-    --tw-text-opacity: 1;
-    color: rgba(232, 232, 232, var(--tw-text-opacity));
   }
 
   .\32xl\:focus\:text-white:focus {
@@ -133113,6 +129915,10 @@ input[type="radio"]:disabled {
 
   .\32xl\:grid-cols-none {
     grid-template-columns: none;
+  }
+
+  .\32xl\:grid-cols-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
   }
 
   .\32xl\:auto-cols-auto {

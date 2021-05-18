@@ -14,11 +14,6 @@ module.exports = {
       light: '#DFDFDF',
       lightest: '#F6F6F6',
     },
-    checkbox: {
-      DEFAULT: "#D8DDE0",
-      active: "#4263EB",
-      disabled: "#E8E8E8",
-    },
     white: {
       DEFAULT: 'white',
     },
@@ -72,6 +67,9 @@ module.exports = {
     '8': '3rem',
   },
   extend: {
+    gridTemplateColumns: {
+      'layout': '220px minmax(0, 1fr)',
+    },
     spacing: {
       sm: '0.5rem',
       md: '1rem',

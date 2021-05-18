@@ -1,0 +1,6 @@
+.admin-layout {
+  @apply grid grid-cols-layout h-full;
+  .main-content {
+    @apply p-lg;
+  }
+}

@@ -1,0 +1,20 @@
+.list-group {
+  .list-group-item {
+    @apply cursor-pointer py-3.5 px-7 text-base leading-5 text-grey;
+
+    &.active, &:hover {
+      @apply text-primary relative;
+      &:before {
+        @apply absolute h-full w-12;
+        top: 0;
+        left: 0;
+        content: "";
+        background: linear-gradient(90deg, #ACA9FF 0%, rgba(172, 169, 255, 0) 91.25%);
+        opacity: 0.2;
+      }
+    }
+  }
+
+
+
+}

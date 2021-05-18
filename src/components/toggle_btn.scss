@@ -2,7 +2,7 @@
   display: none;
   height: 28px;
   + .toggle-btn {
-    @apply bg-white rounded-2xl border-checkbox relative border inline-block align-text-bottom;
+    @apply bg-white rounded-2xl border-grey-light relative border inline-block align-text-bottom;
     outline: 0;
     width: 52px;
     height: 28px;
@@ -20,7 +20,7 @@
     }
 
     &:after {
-      @apply bg-checkbox;
+      @apply bg-grey-light;
       left: 0px;
       top: 0px;
 			border-radius: 50%;
@@ -49,7 +49,7 @@
   }
 
 	&:checked + .toggle-btn {
-    @apply bg-checkbox-active;
+    @apply bg-primary;
     &:after{
       @apply bg-white;
     }
@@ -66,12 +66,12 @@
   }
 
   &:disabled + .toggle-btn{
-    @apply bg-checkbox-disabled;
+    @apply bg-grey-light;
     .tips-content-right, .tips-content-left{
-      @apply text-checkbox-disabled;
+      @apply text-grey-light;
     }
     &:after{
-      @apply bg-checkbox;
+      @apply bg-grey-dark;
     }
 
   }

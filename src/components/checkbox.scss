@@ -1,14 +1,14 @@
 input[type="checkbox"] {
-  @apply rounded border-checkbox focus:outline-none focus:shadow-none focus:ring-0 focus:ring-offset-0;
+  @apply rounded border-grey-light focus:outline-none focus:shadow-none focus:ring-0 focus:ring-offset-0;
   width: 28px;
   height: 28px;
 
 }
 
 input[type="checkbox"] {
-  @apply text-checkbox-active;
+  @apply text-primary;
 }
 
 input[type="checkbox"]:disabled {
-  @apply bg-checkbox-disabled border-checkbox-disabled;
+  @apply bg-grey-light border-grey-light;
 }
