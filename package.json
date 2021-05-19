@@ -6,7 +6,10 @@
   "scripts": {
     "build": "postcss ./src/tailwind.scss -o dist/tailwind.css",
     "start": "http-server dist/",
-    "watch": "postcss ./src/tailwind.scss -o dist/tailwind.css --watch --verbose"
+    "watch": "postcss ./src/tailwind.scss -o dist/tailwind.css --watch --verbose",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.0",
@@ -17,6 +20,7 @@
     "postcss": "^8.2.15",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
-    "tailwindcss": "^2.1.2"
+    "tailwindcss": "^2.1.2",
+    "vitepress": "^0.13.2"
   }
 }
