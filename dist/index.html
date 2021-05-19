@@ -87,14 +87,21 @@
         <div>
           <div class="text-2xl mb-sm block">
             .admin-layout
+            <div class="float-right">
+              <a class="text-primary" href="/layout.html">view full screen</a>
+            </div>
           </div>
-          <div class="h-screen">
+          <div class="h-screen w-full">
             <div class="admin-layout bg-primary">
               <div class="sidebar bg-red">
-                .sidebar
-                <div class="list-group menu bg-white">
-                  .list-group
 
+                <div class="logo-box">
+                  <div class="bg-white">
+                    .sidebar.logo-box
+                  </div>
+                </div>
+                <div class="list-group bg-black">
+                  <div class="text-white">.list-group</div>
                   <div class="list-group-item">
                     <i class="list-icon">i</i>
                     .list-group-item
@@ -144,17 +151,21 @@
               </div>
               <div class="main-content bg-green">
                 <div class="content-header">
-                  <div class="breadcrumbs  bg-white">
-                    .main-content .content-header .breadcrumbs
-                  </div>
-
-                  <div class="header-action text-sm bg-yellow">
-                    .main-content .content-header .header-action
+                  <div class="breadcrumb  bg-white">
+                    <div class="breadcrumb-item">
+                      <a href="#">.breadcrumb</a>
+                    </div>
+                    <div class="breadcrumb-item">
+                      .breadcrumb-item
+                    </div>
+                    <div class="breadcrumb-item active">
+                      .breadcrumb-item.active
+                    </div>
                   </div>
                 </div>
 
                 <div class="content-body bg-blue-light">
-                  <div style="height: 200vh" class="text-white">很多内容</div>
+                  <div style="height: 200vh" class="text-white">.content-body 很多内容</div>
                 </div>
               </div>
             </div>

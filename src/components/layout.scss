@@ -2,19 +2,19 @@
   @apply grid grid-cols-layout h-full overflow-auto;
   .sidebar {
     @apply grid grid-rows-sidebar h-full overflow-auto;
+    .logo-box {
+      @apply p-4 leading-6;
+    }
+
     .list-group {
       @apply overflow-auto;
     }
   }
   .main-content {
-    @apply p-lg h-full overflow-auto grid grid-rows-main-content gap-6;
+    @apply h-full overflow-auto grid grid-rows-main-content;
     .content-header {
-      @apply grid grid-cols-4;
-      .breadcrumbs {
-        @apply col-span-3;
-      }
       .header-action {
-        @apply col-span-1;
+        @apply  float-right;
       }
     }
 

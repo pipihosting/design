@@ -71,9 +71,8 @@ module.exports = {
       'layout': '220px 1fr',
     },
     gridTemplateRows: {
-      'sidebar': '120px 1fr 95px',
-      'main-content': '40px 1fr',
-
+      'sidebar': '4.5rem 1fr',
+      'main-content': '4.5rem 1fr',
     },
     spacing: {
       sm: '0.5rem',
