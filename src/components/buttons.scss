@@ -1,17 +1,16 @@
 .btn {
   @apply px-lg py-sm rounded font-medium cursor-pointer text-white bg-grey hover:bg-grey-dark inline-block text-base border border-grey hover:border-grey-dark;
-}
-
-.btn[disabled], .btn[disabled]:hover {
-  @apply bg-opacity-50 cursor-not-allowed;
-}
-
-.btn-block {
-  @apply w-full;
+  &.btn-sm {
+    @apply py-1 px-4;
+  }
 }
 
 .btn-primary {
   @apply bg-primary hover:bg-primary-dark border border-primary hover:border-primary-dark;
+}
+
+.btn-outline-primary {
+  @apply bg-white text-primary hover:bg-primary-dark hover:text-white border border-primary hover:border-primary-dark;
 }
 
 .btn-blue {
@@ -32,4 +31,12 @@
 
 .btn-black {
   @apply bg-black border border-grey-light text-white hover:bg-white hover:text-black;
+}
+
+.btn[disabled], .btn[disabled]:hover {
+  @apply bg-opacity-50 cursor-not-allowed;
+}
+
+.btn-block {
+  @apply w-full;
 }
