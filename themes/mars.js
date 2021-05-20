@@ -7,6 +7,7 @@ module.exports = {
     },
     background: {
       DEFAULT: '#EBF3FF',
+      dark: "#F4F8FF",
     },
     grey: {
       DEFAULT: '#CCCCCC',

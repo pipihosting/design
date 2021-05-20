@@ -6,7 +6,33 @@ table.table {
   th {
     @apply text-left;
   }
+  thead tr {
+    @apply bg-background-dark;
+  }
+  tbody tr {
+    @apply hover:bg-background;
+  }
 }
+
+
+
+table.table.sm{
+  @apply w-full border-collapse;
+  td, th {
+    @apply font-normal py-2 px-8;
+  }
+  th {
+    @apply text-left;
+  }
+  thead tr {
+    @apply bg-background-dark;
+  }
+  tbody tr {
+    @apply hover:bg-background;
+  }
+}
+
+
 
 table.table-lg {
   @apply text-lg;
