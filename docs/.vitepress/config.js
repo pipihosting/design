@@ -29,6 +29,7 @@ function getGuideSidebar() {
       text: 'Components',
       children: [
         { text: 'Buttons', link: '/components/buttons' },
+        { text: 'Breadcrumb', link: '/components/breadcrumb' },
       ]
     }
   ]
