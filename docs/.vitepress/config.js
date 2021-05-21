@@ -20,9 +20,15 @@ module.exports = {
 function getGuideSidebar() {
   return [
     {
+      text: 'Content',
+      children: [
+        { text: 'Typography', link: '/components/typography' },
+      ]
+    },
+    {
       text: 'Components',
       children: [
-        { text: 'Buttons', link: '/components/buttons' }
+        { text: 'Buttons', link: '/components/buttons' },
       ]
     }
   ]
