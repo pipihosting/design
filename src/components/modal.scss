@@ -1,0 +1,21 @@
+.modal {
+  @apply w-full h-screen inset-0 z-50 overflow-hidden flex justify-center items-center hidden;
+  &.show {
+    @apply fixed;
+  }
+  .modal-dialog {
+    @apply border shadow-lg bg-white w-11/12 md:max-w-screen-md mx-auto rounded shadow-lg z-50 overflow-y-auto;
+
+    .modal-content {
+      .modal-header {
+        @apply bg-grey-lightest relative p-4 text-sm text-left;
+        .close-btn {
+          @apply absolute top-4 right-4 cursor-pointer z-50;
+        }
+      }
+      .modal-body {
+        @apply py-14 px-10;
+      }
+    }
+  }
+}
