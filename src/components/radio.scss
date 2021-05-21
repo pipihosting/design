@@ -1,0 +1,15 @@
+input.radio-btn[type="radio"] {
+  @apply border-grey-light focus:outline-none focus:shadow-none focus:ring-0 focus:ring-offset-0;
+  width: 28px;
+  height: 28px;
+}
+
+input.radio-btn[type="radio"]:checked {
+  @apply text-primary;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke-width='10' fill='none' stroke='white' d='M 15 50 A 35 35, 0, 0, 1, 85 50 A 35 35, 0, 0, 1, 15 50' /%3e%3c/svg%3e");
+}
+
+
+input.radio-btn[type="radio"]:disabled {
+  @apply bg-grey-light border-grey-light;
+}

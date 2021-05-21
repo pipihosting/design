@@ -13,7 +13,9 @@
 }
 .form-control {
   @apply w-full p-sm border-grey-light rounded focus:border-primary text-base;
-
+  &.form-control-sm {
+    @apply py-1 px-sm;
+  }
   &[disabled] {
     @apply bg-grey-light cursor-not-allowed;
   }

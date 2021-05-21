@@ -1,0 +1,79 @@
+.toggle-btn-checkbox {
+  display: none;
+  height: 28px;
+  + .toggle-btn {
+    @apply bg-white rounded-2xl border-grey-light relative border inline-block align-text-bottom;
+    outline: 0;
+    width: 52px;
+    height: 28px;
+    cursor: pointer;
+    user-select: none;
+		padding: 2px;
+		transition: all .4s ease;
+    margin-bottom: 0;
+    &:after,
+    &:before {
+      @apply block relative;
+      content: "";
+      width: 22px;
+      height: 22px;
+    }
+
+    &:after {
+      @apply bg-grey-light;
+      left: 0px;
+      top: 0px;
+			border-radius: 50%;
+			transition: all .2s ease;
+    }
+
+    &:before {
+      @apply hidden;
+    }
+
+    .open-hint{
+      @apply hidden absolute font-normal;
+      top: 0px;
+      left: 66px;
+      width: auto;
+      font-size: 12px;
+      line-height: 26px;
+    }
+    .close-hint{
+      @apply absolute font-normal;
+      left: 66px;
+      top: 0px;
+      font-size: 12px;
+      line-height: 26px;
+    }
+  }
+
+	&:checked + .toggle-btn {
+    @apply bg-primary;
+    &:after{
+      @apply bg-white;
+    }
+    .open-hint{
+      @apply block;
+    }
+    .close-hint{
+      @apply hidden;
+    }
+	}
+
+  &:checked + .toggle-btn:after {
+    left: calc(100% - 24px);
+  }
+
+  &:disabled + .toggle-btn{
+    @apply bg-grey-light;
+    .tips-content-right, .tips-content-left{
+      @apply text-grey-light;
+    }
+    &:after{
+      @apply bg-grey-dark;
+    }
+
+  }
+
+}

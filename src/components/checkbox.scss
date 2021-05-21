@@ -1,0 +1,14 @@
+input.checkbox[type="checkbox"] {
+  @apply rounded border-grey-light focus:outline-none focus:shadow-none focus:ring-0 focus:ring-offset-0;
+  width: 28px;
+  height: 28px;
+
+}
+
+input.checkbox[type="checkbox"] {
+  @apply text-primary;
+}
+
+input.checkbox[type="checkbox"]:disabled {
+  @apply bg-grey-light border-grey-light;
+}
