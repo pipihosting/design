@@ -1,47 +1,28 @@
+const colors = {
+  white: { DEFAULT: 'white' },
+  black: { DEFAULT: '#313131', dark: '#111111', light: '#616161' },
+  grey: { DEFAULT: '#CCCCCC', dark: '#919191', light: '#DFDFDF', lightest: '#F6F6F6' },
+  blue: { DEFAULT: '#22305E', dark: '#111E49', light: '#2E448E' },
+  lightblue: { DEFAULT: '#EBF3FF', dark: "#F4F8FF" },
+  yellow: { light: '#FFBC1F', DEFAULT: '#F6A609', dark: '#E89806' },
+  green: { light: '#1AB759', DEFAULT: '#2AC769', dark: '#40DD7F' },
+  red: { light: '#FF6262', DEFAULT: '#FB4E4E', dark: '#E93C3C' },
+}
+
 module.exports = {
   colors: {
-    primary: {
-      DEFAULT: '#22305E',
-      dark: '#111E49',
-      light: '#2E448E',
-    },
-    background: {
-      DEFAULT: '#EBF3FF',
-      dark: "#F4F8FF",
-    },
-    grey: {
-      DEFAULT: '#CCCCCC',
-      dark: '#919191',
-      light: '#DFDFDF',
-      lightest: '#F6F6F6',
-    },
-    white: {
-      DEFAULT: 'white',
-    },
-    black: {
-      DEFAULT: '#313131',
-      dark: '#111111',
-      light: '#616161',
-    },
-    blue: {
-      DEFAULT: '#22305E',
-      dark: '#111E49',
-      light: '#2E448E',
-    },
-    yellow: {
-      light: '#FFBC1F',
-      DEFAULT: '#F6A609',
-      dark: '#E89806',
-    },
-    green: {
-      light: '#1AB759',
-      DEFAULT: '#2AC769',
-      dark: '#40DD7F',
-    },
-    red: {
-      light: '#FF6262',
-      DEFAULT: '#FB4E4E',
-      dark: '#E93C3C',
+    primary: colors.blue,
+    background: colors.lightblue,
+    grey: colors.grey,
+    white: colors.white,
+    black: colors.black,
+    blue: colors.blue,
+    yellow: colors.yellow,
+    green: colors.green,
+    red: colors.red,
+    table: {
+      head: colors.lightblue.dark,
+      hover: colors.lightblue.DEFAULT,
     }
   },
   fontSize: {
