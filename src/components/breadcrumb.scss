@@ -1,0 +1,29 @@
+.breadcrumb {
+  @apply rounded-sm flex p-6;
+  list-style: none;
+
+  .breadcrumb-item {
+    @apply text-black-light text-sm leading-2 inline-block;
+    a {
+      @apply leading-2 inline-block;
+    }
+    &:before {
+      @apply mx-4;
+      content: ">";
+    }
+    &:active {
+      @apply text-primary;
+      &:before {
+        @apply text-primary;
+      }
+    }
+
+    &:first-child {
+      @apply font-bold text-base text-black-dark leading-2;
+      &:before {
+        content: none;
+        display: none;
+      }
+    }
+  }
+}
