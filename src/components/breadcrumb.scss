@@ -1,0 +1,17 @@
+.breadcrumb {
+  @apply flex list-none;
+
+  .breadcrumb-item {
+    @apply leading-2 inline-block;
+    a {
+      @apply leading-2;
+    }
+
+    &:nth-child(n+2) {
+      &:before {
+        @apply mx-4;
+        content: ">";
+      }
+    }
+  }
+}
