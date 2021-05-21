@@ -3,7 +3,7 @@
 ## Example
 
 <div class="playground text-center">
-  <button class="btn btn-primary" @click="openModal">Open Modal</button>
+  <button class="btn btn-primary" @click="openModal">Simple Modal</button>
   <div class="modal" :class="show_modal && 'show'" id="simple-modal" @click="hiddenModal">
     <div class="modal-dialog" @click.stop="">
       <div class="modal-content">
@@ -13,7 +13,6 @@
             X
           </div>
         </div>
-        <!--Body-->
         <div class="modal-body">
           {{msg}}
         </div>
@@ -43,9 +42,8 @@
 </script>
 
 ```html
-<div class="modal" style="background: rgba(0,0,0,.7);">
-  <div
-    class="modal-dialog">
+<div class="modal show">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         Header
@@ -53,7 +51,6 @@
           X
         </div>
       </div>
-      <!--Body-->
       <div class="modal-body">
         Modal的内容
       </div>
