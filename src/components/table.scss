@@ -3,8 +3,19 @@ table.table {
   td, th {
     @apply font-normal py-4 px-8;
   }
+  &.table-sm {
+    td, th {
+      @apply font-normal py-2 px-8;
+    }
+  }
   th {
     @apply text-left;
+  }
+  thead tr {
+    @apply bg-background-dark;
+  }
+  tbody tr {
+    @apply hover:bg-background;
   }
 }
 
