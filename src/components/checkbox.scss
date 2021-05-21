@@ -1,7 +1,5 @@
 input.checkbox[type="checkbox"] {
-  @apply rounded border-grey-light focus:outline-none focus:shadow-none focus:ring-0 focus:ring-offset-0;
-  width: 28px;
-  height: 28px;
+  @apply rounded border-grey-light w-7 h-7 focus:outline-none focus:shadow-none focus:ring-0 focus:ring-offset-0;
 
 }
 

@@ -1,9 +1,7 @@
 .toggle-btn-checkbox {
-  display: none;
-  height: 28px;
+  @apply hidden h-7;
   + .toggle-btn {
-    @apply bg-white rounded-2xl outline-none cursor-pointer p-px w-14 border-grey-light relative border inline-block align-text-bottom;
-    height: 28px;
+    @apply bg-white rounded-2xl outline-none cursor-pointer p-px w-14 h-7 border-grey-light relative border inline-block align-text-bottom;
     user-select: none;
     transition: all .4s ease;
     &:after,
