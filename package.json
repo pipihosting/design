@@ -4,10 +4,8 @@
   "description": "CSS framework",
   "main": "index.js",
   "scripts": {
+    "dev": "vitepress dev docs",
     "build": "postcss ./src/tailwind.scss -o dist/tailwind.css",
-    "start": "http-server build/",
-    "watch": "postcss ./src/tailwind.scss -o build/tailwind.css --watch --verbose",
-    "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
@@ -15,10 +13,10 @@
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.3.2",
     "autoprefixer": "^10.2.5",
-    "http-server": "^0.12.3",
     "postcss": "^8.2.15",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
+    "sass": "^1.33.0",
     "tailwindcss": "^2.1.2",
     "vitepress": "^0.13.2"
   }
