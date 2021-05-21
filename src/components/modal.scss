@@ -1,7 +1,7 @@
 .modal {
-  @apply w-full h-screen inset-0 z-50 overflow-hidden flex justify-center items-center hidden;
+  @apply w-full fixed h-screen inset-0 z-50 overflow-hidden justify-center items-center hidden bg-black bg-opacity-20;
   &.show {
-    @apply fixed;
+    @apply flex;
   }
   .modal-dialog {
     @apply border shadow-lg bg-white w-11/12 md:max-w-screen-md mx-auto rounded shadow-lg z-50 overflow-y-auto;

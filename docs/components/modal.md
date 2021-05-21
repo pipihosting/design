@@ -3,20 +3,19 @@
 ## Example
 
 <div class="playground text-center">
-  <button class="btn btn-primary" onclick="openModal('simple-modal')">Open Modal</button>
-  <div class="modal" id="simple-modal" style="background: rgba(0,0,0,.7);">
-    <div
-      class="modal-dialog">
+  <button class="btn btn-primary" @click="openModal">Open Modal</button>
+  <div class="modal" :class="show_modal && 'show'" id="simple-modal" @click="hiddenModal">
+    <div class="modal-dialog" @click.stop="">
       <div class="modal-content">
         <div class="modal-header">
           Header
-          <div class="close-btn">
+          <div class="close-btn" @click="hiddenModal">
             X
           </div>
         </div>
         <!--Body-->
         <div class="modal-body">
-          Modal的内容
+          {{msg}}
         </div>
       </div>
     </div>
@@ -24,9 +23,22 @@
 </div>
 
 <script>
-  function openModal(id){
-    var modal = document.getElementById(id);
-    modal.classList.add("show");
+  import { h, ref } from 'vue'
+  export default {
+    data: function(){
+      return {
+        msg: '弹窗',
+        show_modal: false
+      }
+    },
+    methods: {
+      openModal: function(){
+        this.show_modal = true
+      },
+      hiddenModal: function(){
+        this.show_modal = false
+      }
+    }
   }
 </script>
 
