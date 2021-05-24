@@ -9,14 +9,14 @@
       }
     }
     .list-item-tips {
-      @apply absolute right-4 p-1 top-6 rounded-xl text-red-dark bg-opacity-10 bg-red-light text-sm text-center w-8;
+      @apply absolute right-4 p-1 top-4 rounded-xl text-red-dark bg-opacity-10 bg-red-light text-sm text-center w-8;
       line-height: 1;
     }
 
     &.collapsible {
       @apply relative;
       &:after {
-        @apply absolute top-7 right-5 w-0 h-0;
+        @apply absolute top-5 right-5 w-0 h-0;
         content: '';
         border: 0.4rem solid transparent;
         border-left: 0.4rem solid theme('colors.grey.dark');
