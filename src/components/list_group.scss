@@ -1,18 +1,42 @@
 .list-group {
+  @apply p-0;
   .list-group-item {
-    @apply cursor-pointer block relative py-3.5 pl-7 text-base leading-5 text-grey;
-    .list-icon {
-      @apply text-xl mr-md inline-block;
+    @apply cursor-pointer block relative py-3.5 pl-16 text-base leading-5 text-grey;
+    &.with-icon {
+      @apply pl-7;
+      .list-item-icon {
+        @apply text-xl mr-md inline-block;
+      }
     }
-
     .list-item-tips {
-      @apply absolute right-4 top-6 rounded-xl text-red-dark bg-opacity-10 bg-red-light text-sm text-center w-8;
-      padding: 1px;
+      @apply absolute right-4 p-1 top-6 rounded-xl text-red-dark bg-opacity-10 bg-red-light text-sm text-center w-8;
       line-height: 1;
     }
 
-    &.active, &:hover {
-      @apply text-grey-light bg-opacity-20 bg-black-light;
+    &.collapsible {
+      @apply relative;
+      &:after {
+        @apply absolute top-7 right-5 w-0 h-0;
+        content: '';
+        border: 0.4rem solid transparent;
+        border-left: 0.4rem solid theme('colors.grey.dark');
+      }
+
+      &.expanded {
+        &:after {
+          @apply right-6;
+          border-left: 0.4rem solid transparent;
+          border-top: 0.4rem solid theme('colors.grey.dark');
+        }
+      }
+    }
+
+    &.active, &:hover,&.expanded {
+      @apply text-white bg-opacity-20 bg-black-light;
+    }
+
+    &.expanded {
+      @apply text-grey;
     }
   }
 
