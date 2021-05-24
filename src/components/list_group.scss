@@ -1,11 +1,11 @@
 .list-group {
   @apply p-0;
   .list-group-item {
-    @apply cursor-pointer block relative py-3.5 pl-16 text-base leading-5 text-grey;
+    @apply cursor-pointer block relative pl-16 py-3.5 text-base text-grey leading-1;
     &.with-icon {
       @apply pl-7;
       .list-item-icon {
-        @apply text-xl mr-md inline-block;
+        @apply mr-4 inline-block;
       }
     }
     .list-item-tips {
