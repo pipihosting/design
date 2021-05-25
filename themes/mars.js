@@ -12,6 +12,11 @@ const colors = {
 module.exports = {
   colors: {
     primary: colors.blue,
+    danger: colors.red,
+    info: colors.blue,
+    success: colors.green,
+    warning: colors.yellow,
+    secondary: colors.grey,
     background: colors.lightblue,
     grey: colors.grey,
     white: colors.white,
@@ -63,6 +68,6 @@ module.exports = {
     },
     boxShadow: {
       DEFAULT: '0px 2px 20px 0px #0000000D'
-    }
+    },
   }
 }

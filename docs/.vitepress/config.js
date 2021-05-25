@@ -22,6 +22,7 @@ function getGuideSidebar() {
     {
       text: 'Content',
       children: [
+        { text: 'Color', link: '/content/color' },
         { text: 'Typography', link: '/components/typography' },
       ]
     },
