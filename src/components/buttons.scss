@@ -18,20 +18,16 @@
   @apply bg-primary hover:bg-primary-dark border border-primary hover:border-primary-dark;
 }
 
-.btn-blue {
-  @apply bg-blue hover:bg-blue-dark border border-blue hover:border-blue-dark;
+.btn-yellow, .btn-warning {
+  @apply bg-warning hover:bg-warning-dark border border-warning hover:border-warning-dark;
 }
 
-.btn-yellow {
-  @apply bg-yellow hover:bg-yellow-dark border border-yellow hover:border-yellow-dark;
+.btn-green, .btn-success {
+  @apply bg-success hover:bg-success-dark border border-success hover:border-success-dark;
 }
 
-.btn-green {
-  @apply bg-green hover:bg-green-dark border border-green hover:border-green-dark;
-}
-
-.btn-red {
-  @apply bg-red hover:bg-red-dark border border-red hover:border-red-dark;
+.btn-red, .btn-danger {
+  @apply bg-danger hover:bg-danger-dark border border-danger hover:border-danger-dark;
 }
 
 .btn-white {

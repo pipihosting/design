@@ -1,13 +1,13 @@
 .simple_form {
   .form-group-invalid {
     label {
-      @apply text-red;
+      @apply text-danger;
     }
     .form-control {
-      @apply border-red-light focus:border-red;
+      @apply border-danger-light focus:border-danger;
     }
     .invalid-feedback {
-      @apply text-sm text-red;
+      @apply text-sm text-danger;
     }
   }
 }
