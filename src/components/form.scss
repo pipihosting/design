@@ -12,18 +12,24 @@
   }
 }
 
+.form-label {
+  @apply mb-2 inline-block;
+}
+
 .form-control {
-  @apply w-full p-sm border-grey-light rounded focus:border-primary text-base;
+  @apply w-full border p-2 border-grey-light rounded focus:border-primary text-base focus:outline-none;
+
   &.form-control-sm {
-    @apply py-1 px-sm;
+    @apply py-1 text-sm;
   }
+
   &[disabled] {
-    @apply bg-grey-light cursor-not-allowed;
+    @apply bg-grey-lightest cursor-not-allowed;
   }
 }
 
 .input-group, .form-group {
-  @apply mb-sm;
+  @apply mb-4;
 }
 
 .date-select {
