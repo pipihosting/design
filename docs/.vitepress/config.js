@@ -33,6 +33,7 @@ function getGuideSidebar() {
         { text: 'Breadcrumb', link: '/components/breadcrumb' },
         { text: 'Table', link: '/components/table' },
         { text: 'Form', link: '/components/form' },
+        { text: 'Modal', link: '/components/modal' },
       ]
     }
   ]
