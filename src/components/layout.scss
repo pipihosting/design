@@ -1,0 +1,24 @@
+.admin-layout {
+  @apply grid grid-cols-layout h-full overflow-auto;
+  .sidebar {
+    @apply grid grid-rows-sidebar h-full overflow-auto;
+    .logo-box {
+      @apply p-4 leading-6;
+    }
+
+    .list-group {
+      @apply overflow-auto;
+    }
+  }
+  .main-content {
+    @apply h-full overflow-auto grid grid-rows-main-content;
+    .content-header {
+      .header-action {
+        @apply  float-right;
+      }
+    }
+    .content-body {
+      @apply overflow-auto;
+    }
+  }
+}
