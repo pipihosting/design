@@ -32,6 +32,7 @@ function getGuideSidebar() {
         { text: 'Buttons', link: '/components/buttons' },
         { text: 'Breadcrumb', link: '/components/breadcrumb' },
         { text: 'Table', link: '/components/table' },
+        { text: 'Form', link: '/components/form' },
       ]
     }
   ]
