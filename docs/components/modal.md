@@ -3,15 +3,13 @@
 ## Example
 
 <div class="playground text-center">
-  <button class="btn btn-primary" @click="openModal">Simple Modal</button>
-  <div class="modal" :class="show_modal && 'show'" id="simple-modal" @click="hiddenModal">
+  <button class="btn btn-primary" @click="show_modal = true">Simple Modal</button>
+  <div class="modal" :class="show_modal && 'show'" id="simple-modal" @click="show_modal = false">
     <div class="modal-dialog" @click.stop="">
       <div class="modal-content">
         <div class="modal-header">
-          Header
-          <div class="close-btn" @click="hiddenModal">
-            X
-          </div>
+          <h5 class="modal-title">Header</h5>
+          <button class="close-btn" @click="show_modal = false"></button>
         </div>
         <div class="modal-body">
           {{msg}}
@@ -30,14 +28,6 @@
         show_modal: false
       }
     },
-    methods: {
-      openModal: function(){
-        this.show_modal = true
-      },
-      hiddenModal: function(){
-        this.show_modal = false
-      }
-    }
   }
 </script>
 
