@@ -49,6 +49,13 @@ module.exports = {
     '8': '3rem',
   },
   extend: {
+    gridTemplateColumns: {
+      'layout': '220px 1fr',
+    },
+    gridTemplateRows: {
+      'sidebar': '4.5rem 1fr',
+      'main-content': '4.5rem 1fr',
+    },
     spacing: {
       sm: '0.5rem',
       md: '1rem',
