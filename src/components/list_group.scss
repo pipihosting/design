@@ -13,7 +13,7 @@
     -webkit-appearance: none !important;
   }
   .list-group-item {
-    @apply cursor-pointer block relative pl-16 py-3.5 text-base text-grey leading-1 no-underline;
+    @apply cursor-pointer block relative pl-16 py-3.5 pr-4 text-base text-grey leading-1 no-underline;
     &.with-icon {
       @apply pl-7;
       .list-item-icon {
@@ -21,14 +21,10 @@
       }
     }
     .list-item-tips {
-      @apply absolute right-4 p-1 top-4 rounded-xl text-danger-dark bg-opacity-10 bg-danger-light text-sm text-center w-8;
-      line-height: 1;
+      @apply rounded-full text-danger-dark bg-opacity-10 bg-danger-light float-right;
     }
     &.collapsible {
-      @apply relative;
-      .list-item-tips {
-        @apply right-10;
-      }
+      @apply relative pr-12;
       &:after {
         @apply absolute top-5 right-5 w-0 h-0;
         content: '';
