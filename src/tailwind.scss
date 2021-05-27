@@ -1,21 +1,22 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 
-@import "./components/panel.scss";
-@import "./components/form.scss";
-@import "./components/form-check.scss";
-@import "./components/buttons.scss";
-@import "./components/navbar.scss";
-@import "./components/table.scss";
 @import "./components/alert.scss";
-@import "./components/list.scss";
-@import "./components/dropdown.scss";
 @import "./components/avatar.scss";
-@import "./components/pagination.scss";
-@import "./components/modal.scss";
+@import "./components/badge.scss";
 @import "./components/breadcrumb.scss";
+@import "./components/buttons.scss";
+@import "./components/dropdown.scss";
+@import "./components/form-check.scss";
+@import "./components/form.scss";
 @import "./components/layout.scss";
+@import "./components/list.scss";
 @import "./components/list_group.scss";
+@import "./components/modal.scss";
+@import "./components/navbar.scss";
+@import "./components/pagination.scss";
+@import "./components/panel.scss";
+@import "./components/table.scss";
 
 @import "tailwindcss/utilities";
 
