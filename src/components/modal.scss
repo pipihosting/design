@@ -4,7 +4,7 @@
     @apply flex;
   }
   .modal-dialog {
-    @apply border shadow-lg bg-white w-11/12 md:max-w-screen-md mx-auto rounded shadow-lg z-50 overflow-y-auto;
+    @apply shadow-lg bg-white w-11/12 md:max-w-screen-md mx-auto rounded shadow-lg z-50 overflow-y-auto;
 
     .modal-content {
       .modal-header {
@@ -16,6 +16,12 @@
       }
       .modal-body {
         @apply py-14 px-10;
+      }
+      .modal-footer {
+        @apply py-4 flex justify-center px-16 gap-4;
+        &.right-btn {
+          @apply justify-end;
+        }
       }
     }
   }
