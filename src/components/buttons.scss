@@ -1,5 +1,5 @@
 .btn {
-  @apply px-lg py-sm rounded font-medium cursor-pointer text-white bg-grey hover:bg-grey-dark inline-block text-base border border-grey hover:border-grey-dark;
+  @apply px-lg py-sm rounded font-medium cursor-pointer text-white bg-grey hover:bg-grey-dark inline-block text-base border border-grey hover:border-grey-dark focus:outline-none;;
 }
 
 .btn-sm {
