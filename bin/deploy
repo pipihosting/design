@@ -6,6 +6,6 @@ yarn docs:build
 
 echo 'Start deploy'
 
-scp -r docs/.vitepress/dist/ pipi-staging02:/mnt/design-staging/
+rsync -r --progress -e ssh docs/.vitepress/dist/ pipi-staging02:/mnt/design-staging/dist/
 
 echo '🍻'
