@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+echo 'Start building docs...'
+
+yarn docs:build
+
+echo 'Start deploy'
+
+scp -r docs/.vitepress/dist/ pipi-staging02:/mnt/design-staging/
+
+echo '🍻'
