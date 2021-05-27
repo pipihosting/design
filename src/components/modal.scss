@@ -17,6 +17,12 @@
       .modal-body {
         @apply py-14 px-10;
       }
+      .modal-footer {
+        @apply py-4 flex justify-center px-16;
+        &.right-btn {
+          @apply justify-end;
+        }
+      }
     }
   }
 }
