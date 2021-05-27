@@ -13,11 +13,11 @@
 }
 
 .form-label {
-  @apply mb-2 inline-block;
+  @apply mb-2 inline-block leading-1;
 }
 
 .form-control {
-  @apply w-full border p-2 border-grey-light rounded focus:border-primary text-base focus:outline-none;
+  @apply w-full border p-2 border-grey-light rounded focus:border-primary text-base focus:outline-none leading-1;
 
   &.form-control-sm {
     @apply py-1 text-sm;

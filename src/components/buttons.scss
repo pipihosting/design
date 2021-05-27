@@ -1,9 +1,9 @@
 .btn {
-  @apply px-lg py-sm rounded font-medium cursor-pointer text-white bg-grey hover:bg-grey-dark inline-block text-base border border-grey hover:border-grey-dark focus:outline-none;;
+  @apply px-lg py-sm rounded font-medium cursor-pointer text-white bg-grey hover:bg-grey-dark inline-block text-base border border-grey hover:border-grey-dark focus:outline-none leading-1;
 }
 
 .btn-sm {
-  @apply text-sm px-1 py-1 leading-1;
+  @apply text-sm px-1 py-1;
 }
 
 .btn[disabled], .btn[disabled]:hover {
