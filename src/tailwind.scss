@@ -1,4 +1,7 @@
 @import "tailwindcss/base";
+
+@import "layout/row.scss";
+
 @import "tailwindcss/components";
 
 @import "./components/alert.scss";
@@ -20,4 +23,4 @@
 
 @import "tailwindcss/utilities";
 
-@import "./layouts/playground.scss";
+@import "./layout/playground.scss";

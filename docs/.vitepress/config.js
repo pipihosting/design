@@ -20,6 +20,12 @@ module.exports = {
 function getGuideSidebar() {
   return [
     {
+      text: 'Layout',
+      children: [
+        { text: 'Grid', link: '/layout/grid' }
+      ]
+    },
+    {
       text: 'Content',
       children: [
         { text: 'Color', link: '/content/color' },
