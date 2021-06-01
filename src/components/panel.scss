@@ -1,8 +1,12 @@
 .panel {
   @apply bg-white rounded-lg border-0 shadow;
 
-  .panel-body {
+  .panel-body, .panel-header {
     @apply px-5 py-4 md:px-10 md:py-8;
+  }
+
+  .panel-header {
+    @apply border-b border-grey-lightest;
   }
 }
 
