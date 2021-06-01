@@ -23,8 +23,12 @@
     @apply py-1 text-sm;
   }
 
-  &[disabled] {
-    @apply bg-grey-lightest cursor-not-allowed;
+  &:disabled {
+    @apply bg-grey-lightest text-grey cursor-not-allowed;
+  }
+
+  &:read-only {
+    @apply bg-grey-lightest text-black;
   }
 }
 
