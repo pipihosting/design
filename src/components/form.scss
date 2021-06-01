@@ -24,7 +24,10 @@
   }
 
   &[disabled] {
-    @apply bg-grey-lightest cursor-not-allowed;
+    @apply bg-grey-lightest text-grey cursor-not-allowed;
+  }
+  &:read-only {
+    @apply bg-grey-lightest text-black;
   }
 }
 
