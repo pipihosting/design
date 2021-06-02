@@ -13,6 +13,13 @@ const mars = {
     light: '#EBF3FF',
     lightest: '#F4F8FF',
   },
+  secondary: {
+    darkest: "#1B1E28",
+    dark: "#282C38",
+    DEFAULT: "#7B7E8B",
+    light: "#B2BEE4",
+    lightest: "#DADFEE",
+  },
 }
 
 module.exports = {
@@ -24,6 +31,15 @@ module.exports = {
       head: mars.light.lightest,
       hover: mars.light.light,
     },
+    sidebar: {
+      bg: mars.secondary.darkest,
+      text: mars.secondary,
+      "hover-bg": mars.secondary.light,
+      "hover-text": mars.white,
+      "hover-collapsible-bg": mars.secondary.light,
+      "hover-collapsible-text": mars.secondary.lightest,
+      "hover-collapsed-bg": mars.secondary.dark,
+    }
   },
   fontSize: {
     sm: ['0.86rem', '1.5'],

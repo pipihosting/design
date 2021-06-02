@@ -1,13 +1,28 @@
 .admin-layout {
   @apply grid grid-cols-layout h-full overflow-auto;
   .sidebar {
-    @apply grid grid-rows-sidebar h-full overflow-auto;
+    @apply grid grid-rows-sidebar h-full overflow-auto bg-sidebar-bg;
     .logo-box {
       @apply p-4 leading-6;
     }
 
     .list-group {
       @apply overflow-auto;
+      .list-group-item {
+        @apply text-sidebar-text bg-sidebar-bg;
+        &:hover,&.active {
+          @apply text-sidebar-hover-text bg-sidebar-hover-bg;
+        }
+        &.expanded {
+          @apply text-sidebar-hover-collapsible-text bg-sidebar-hover-collapsible-bg;
+        }
+
+      }
+      .collapsed {
+        .list-group-item &:hover,&.active{
+          @apply bg-hover-collapsed-bg;
+        }
+      }
     }
   }
   .main-content {
