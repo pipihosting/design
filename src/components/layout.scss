@@ -11,16 +11,16 @@
       .list-group-item {
         @apply text-sidebar-text bg-sidebar-bg;
         &:hover,&.active {
-          @apply text-sidebar-hover-text bg-sidebar-hover-bg;
+          @apply text-sidebar-hover-text bg-sidebar-hover-bg bg-opacity-20;
         }
         &.expanded {
-          @apply text-sidebar-hover-collapsible-text bg-sidebar-hover-collapsible-bg;
+          @apply text-sidebar-hover-collapsible-text bg-sidebar-hover-collapsible-bg bg-opacity-20;
         }
 
       }
       .collapsed {
         .list-group-item &:hover,&.active{
-          @apply bg-sidebar-hover-collapsed-bg;
+          @apply bg-sidebar-hover-collapsed-bg bg-opacity-100;
         }
       }
     }
