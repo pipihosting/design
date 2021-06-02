@@ -20,7 +20,7 @@
       }
       .collapsed {
         .list-group-item &:hover,&.active{
-          @apply bg-hover-collapsed-bg;
+          @apply bg-sidebar-hover-collapsed-bg;
         }
       }
     }
