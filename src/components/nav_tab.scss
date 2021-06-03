@@ -1,0 +1,34 @@
+
+
+.nav {
+  @apply flex flex-wrap pl-0 mb-0;
+  list-style: none;
+  .nav-link {
+    @apply block p-3 text-base text-black text-center cursor-pointer;
+    min-width: 8rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    &.active {
+      @apply block p-3 text-base text-primary font-bold;
+    }
+  }
+
+  &.nav-tabs {
+    @apply bg-light-light;
+    .nav-link {
+      @apply border-b border-light-light;
+      &.active {
+        @apply border-primary;
+      }
+    }
+  }
+}
+
+.tab-content {
+  .tab-pane {
+    @apply hidden;
+  }
+  .active {
+    @apply block;
+  }
+}
