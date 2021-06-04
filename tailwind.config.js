@@ -1,8 +1,12 @@
 const defaultTheme = require("./themes/mars.js")
 
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.scss', './docs/**/*.md'],
+  },
   darkMode: false, // or 'media' or 'class'
+  important: true,
   theme: {
     ...defaultTheme,
   },

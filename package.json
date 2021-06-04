@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "postcss ./src/tailwind.scss -o dist/tailwind.css",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "deploy:staging": "./bin/deploy"
