@@ -27,7 +27,7 @@
     @apply bg-grey-lightest text-grey cursor-not-allowed;
   }
 
-  &:read-only {
+  &:read-only:not(select) {
     @apply bg-grey-lightest text-black;
   }
 }
