@@ -20,7 +20,7 @@
   </div>
 </div>
 
-<style>
+<style scoped>
 .row > [class^="col"] {
   @apply bg-light-light p-4 border;
 }

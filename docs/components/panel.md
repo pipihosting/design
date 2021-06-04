@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<style>
+<style scoped>
 .playground {
   @apply bg-light-light;
 }
