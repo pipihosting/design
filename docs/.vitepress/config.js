@@ -43,6 +43,7 @@ function getGuideSidebar() {
         { text: 'List Group', link: '/components/list_group' },
         { text: 'Modal', link: '/components/modal' },
         { text: 'Panel', link: '/components/panel' },
+        { text: 'Nav', link: '/components/nav' },
       ]
     }
   ]
