@@ -23,12 +23,3 @@
     }
   }
 }
-
-.tab-content {
-  .tab-pane {
-    @apply hidden;
-  }
-  .active {
-    @apply block;
-  }
-}
