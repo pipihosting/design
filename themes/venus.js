@@ -1,17 +1,17 @@
 const colors = require('../src/colors')
 
-const mars = {
+const venus = {
   ...colors,
   primary: {
-    dark: '#111E49',
-    DEFAULT: '#22305E',
-    light: '#2C428A',
+    dark: '#1E7B28',
+    DEFAULT: '#14AD24',
+    light: '#35C944',
   },
   light: {
-    dark: '#5775D8',
-    DEFAULT: '#95AEFF',
-    light: '#EBF3FF',
-    lightest: '#F4F8FF',
+    dark: '#72F37F',
+    DEFAULT: '#9FFFA9',
+    light: '#E3FFE6',
+    lightest: '#F5FFF6',
   },
   secondary: {
     darkest: "#1B1E28",
@@ -24,21 +24,21 @@ const mars = {
 
 module.exports = {
   colors: {
-    ...mars,
+    ...venus,
     muted: colors.grey,
-    background: mars.light.light,
+    background: venus.light.light,
     table: {
-      head: mars.light.lightest,
-      hover: mars.light.light,
+      head: venus.light.lightest,
+      hover: venus.light.light,
     },
     sidebar: {
-      bg: mars.secondary.darkest,
-      text: mars.secondary,
-      "hover-bg": mars.secondary.light,
-      "hover-text": mars.white,
-      "hover-collapsible-bg": mars.secondary.light,
-      "hover-collapsible-text": mars.secondary.lightest,
-      "hover-collapsed-bg": mars.secondary.dark,
+      bg: venus.secondary.darkest,
+      text: venus.secondary,
+      "hover-bg": venus.secondary.light,
+      "hover-text": venus.white,
+      "hover-collapsible-bg": venus.secondary.light,
+      "hover-collapsible-text": venus.secondary.lightest,
+      "hover-collapsed-bg": venus.secondary.dark,
     }
   },
   fontSize: {
