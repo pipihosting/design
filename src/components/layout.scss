@@ -19,7 +19,7 @@
 
       }
       .collapsed {
-        .list-group-item &:hover,&.active{
+        .list-group-item:hover, .list-group-item:hover.active {
           @apply bg-sidebar-hover-collapsed-bg bg-opacity-100;
         }
       }
