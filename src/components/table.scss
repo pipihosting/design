@@ -14,8 +14,10 @@ table.table {
   thead tr {
     @apply bg-table-head;
   }
-  tbody tr {
-    @apply hover:bg-table-hover;
+  &.table-hover {
+    tbody tr {
+      @apply hover:bg-table-hover;
+    }
   }
 }
 

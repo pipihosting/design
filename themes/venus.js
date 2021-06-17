@@ -8,10 +8,10 @@ const venus = {
     light: '#35C944',
   },
   light: {
-    dark: '#72F37F',
-    DEFAULT: '#9FFFA9',
-    light: '#E3FFE6',
-    lightest: '#F5FFF6',
+    dark: '#4BE45B',
+    DEFAULT: '#B2FBB9',
+    light: '#F1FFF3',
+    lightest: '#FAFFFA',
   },
   secondary: {
     darkest: "#1B1E28",
