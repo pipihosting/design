@@ -11,7 +11,9 @@
 }
 
 .panel-sm {
-  .panel-body {
-    @apply px-8;
+  @apply rounded;
+
+  .panel-body, .panel-header {
+    @apply px-4 py-4;
   }
 }
