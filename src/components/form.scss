@@ -57,3 +57,15 @@
     padding-left: 2rem;
   }
 }
+
+.input-group {
+  @apply flex items-center w-full border border-grey-light rounded focus:border-primary text-base leading-1;
+  overflow: hidden;
+  .form-control {
+    border: none;
+    flex: 1;
+  }
+  .input-group-text {
+    @apply bg-grey-lightest p-2;
+  }
+}

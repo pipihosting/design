@@ -38,6 +38,23 @@
   <div class="form-group">
     <input class="form-control" readonly value="Readonly"/>
   </div>
+
+  <div class="form-group">
+    <label class="form-label" for="icon-control">Date Range</label>
+    <div class="input-group">
+      <input class="form-control" placeholder="Default form-control" id="default-control" type="date" >
+      <span class="input-group-text">TO</span>
+      <input class="form-control" placeholder="Default form-control" id="default-control" type="date" >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="icon-control">Date Range</label>
+    <div class="input-group">
+      <span class="input-group-text">Date</span>
+      <input class="form-control" placeholder="Default form-control" id="default-control" type="date" >
+    </div>
+  </div>
 </div>
 
 ```html
