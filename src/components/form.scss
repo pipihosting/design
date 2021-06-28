@@ -17,7 +17,7 @@
 }
 
 .form-control {
-  @apply w-full border p-2 border-grey-light rounded focus:border-primary text-base focus:outline-none leading-1;
+  @apply w-full border p-2 border-grey-light rounded focus:border-primary text-base focus:outline-none leading-1 focus:ring-0;
 
   &.form-control-sm {
     @apply py-1 text-sm;
@@ -59,11 +59,9 @@
 }
 
 .input-group {
-  @apply flex items-center w-full border border-grey-light rounded focus:border-primary text-base leading-1;
-  overflow: hidden;
+  @apply flex items-center w-full border border-grey-light rounded text-base leading-1 overflow-hidden;
   .form-control {
-    border: none;
-    flex: 1;
+    @apply border-0 flex-1;
   }
   .input-group-text {
     @apply bg-grey-lightest p-2;

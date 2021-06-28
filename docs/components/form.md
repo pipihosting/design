@@ -52,7 +52,7 @@
     <label class="form-label" for="icon-control">Date Range</label>
     <div class="input-group">
       <span class="input-group-text">Date</span>
-      <input class="form-control" placeholder="Default form-control" id="default-control" type="date" >
+      <input class="form-control" placeholder="Default form-control" id="default-control">
     </div>
   </div>
 </div>
