@@ -1,8 +1,12 @@
 {
-  "name": "pipi-design",
-  "version": "0.0.1",
+  "name": "@pipihosting/design",
+  "version": "0.0.3",
   "description": "CSS framework",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipihosting/design.git"
+  },
   "scripts": {
     "dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
