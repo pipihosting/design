@@ -1,8 +1,8 @@
 {
   "name": "@pipihosting/design",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "CSS framework",
-  "private": true,
+  "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
